@@ -1,2 +1,0 @@
-/home/kronos/ns-allinone-3.29/ns-3.29/examples/kronos_experiments/udp_client.py 10.0.0.1
-olsrd -f /tmp/lxc-2/lxc-2-olsrd-config
