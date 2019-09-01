@@ -1,0 +1,3 @@
+Mu Elapsed time (us): 2500
+Std Elapsed time (us): 0
+TracerID: 0, STOP Command received. Stopping tracer ...

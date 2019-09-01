@@ -1,0 +1,3 @@
+Running:  ['/home/kronos/NSDI-2020/repeatability/crypto_test']
+Mu Elapsed time (us): 1507
+Std Elapsed time (us): 0
