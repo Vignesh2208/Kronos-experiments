@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/32829.Journey_to_the_Center_of_the_Earth', u'vote_count': u'313', u'score': u'27,490', u'author': u'Jules Verne', u'title': u'Journey to the Center of the Earth (Extraordinary Voyages, #3)'}

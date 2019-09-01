@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/9969571-ready-player-one', u'vote_count': u'281', u'score': u'26,302', u'author': u'Ernest Cline', u'title': u'Ready Player One'}

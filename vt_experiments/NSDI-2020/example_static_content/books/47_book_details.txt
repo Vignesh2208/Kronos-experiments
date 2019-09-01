@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/51964.Old_Man_s_War', u'vote_count': u'446', u'score': u'40,653', u'author': u'John Scalzi', u'title': u"Old Man's War (Old Man's War, #1)"}

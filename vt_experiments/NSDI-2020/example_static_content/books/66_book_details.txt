@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/530965.The_Day_of_the_Triffids', u'vote_count': u'303', u'score': u'26,602', u'author': u'John Wyndham', u'title': u'The Day of the Triffids'}

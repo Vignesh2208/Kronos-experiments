@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/18373.Flowers_for_Algernon', u'vote_count': u'707', u'score': u'65,192', u'author': u'Daniel Keyes', u'title': u'Flowers for Algernon'}

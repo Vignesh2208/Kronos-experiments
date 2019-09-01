@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/13651.The_Dispossessed', u'vote_count': u'365', u'score': u'33,154', u'author': u'Ursula K. Le Guin', u'title': u'The Dispossessed'}

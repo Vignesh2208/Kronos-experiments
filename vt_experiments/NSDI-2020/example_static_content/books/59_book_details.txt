@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/22590.Ubik', u'vote_count': u'330', u'score': u'29,572', u'author': u'Philip K. Dick', u'title': u'Ubik'}

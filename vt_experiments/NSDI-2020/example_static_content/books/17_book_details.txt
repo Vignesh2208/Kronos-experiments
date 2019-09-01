@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/7967.Speaker_for_the_Dead', u'vote_count': u'026', u'score': u'97,445', u'author': u'Orson Scott Card', u'title': u'Speaker for the Dead (The Ender Quintet, #3)'}

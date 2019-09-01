@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/34.The_Fellowship_of_the_Ring', u'vote_count': u'674', u'score': u'62,622', u'author': u'J.R.R. Tolkien', u'title': u'The Fellowship of the Ring (The Lord of the Rings, #1)'}

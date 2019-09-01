@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/6424171-jurassic-park', u'vote_count': u'854', u'score': u'80,396', u'author': u'Michael Crichton', u'title': u'Jurassic Park'}

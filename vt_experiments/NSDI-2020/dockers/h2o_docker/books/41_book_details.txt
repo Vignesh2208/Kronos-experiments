@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/14050.The_Time_Traveler_s_Wife', u'vote_count': u'493', u'score': u'46,347', u'author': u'Audrey Niffenegger', u'title': u"The Time Traveler's Wife"}

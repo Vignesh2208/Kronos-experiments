@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/5129.Brave_New_World', u'vote_count': u'941', u'score': u'186,969', u'author': u'Aldous Huxley', u'title': u'Brave New World'}
