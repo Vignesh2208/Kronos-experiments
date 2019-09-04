@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <errno.h>
+#include <vector>
 #include <readline/readline.h>
 
 #include <iostream>
@@ -27,7 +28,9 @@ namespace lxc_manager {
                         long num_insns_per_round = 1000000;
 			float relative_cpu_speed = 1.0;
 			std::unordered_map<int, std::string> lxcNumToStartupCmd;
+                        
 		public:
+                std::vector<std::string> lxcIPs;
 		LXCManager(int num_lxcs, string startup_cmds_dir, bool is_virtual,
 			   long num_insns_per_round, float relative_cpu_speed) :
 			numLxcs(num_lxcs), startupCmdsDir(startup_cmds_dir),

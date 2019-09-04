@@ -122,6 +122,7 @@ std::vector<double> time_elapsed;
 std::cout << "Waiting for 1 sec for server to start ..." << std::endl;
 std::this_thread::sleep_for (std::chrono::seconds(1));
 
+
 for(int i = 0; i < num_trials; i++) {
 
 	struct timeval start, end; 

@@ -14,7 +14,9 @@ const string cmd_executor_path = "/home/kronos/ns-allinone-3.29/ns-3.29/examples
 //Creates the necessary configuration files for the LXCs
 void LXCManager::createConfigFiles() {
 	int i;
+        
 	string file_name;
+	
 	for (i = 1; i <= numLxcs; i++) {
 		system(("mkdir -p /tmp/lxc-" + std::to_string(i)).c_str());
 		file_name = "/tmp/lxc-" + std::to_string(i) + "/lxc-" + std::to_string(i) + ".conf";
@@ -25,16 +27,17 @@ void LXCManager::createConfigFiles() {
 			myfile << "lxc.network.type = veth\n";
 			myfile << "lxc.network.flags = up\n";
 			myfile << "lxc.network.link = br-" << i << "\n";
-			myfile << "lxc.network.ipv4 = 10.0.0." << i << "/24\n";
+                        if (lxcIPs.empty()) {
+			    myfile << "lxc.network.ipv4 = 10.0.0." << i << "/24\n";
+                        } else {
+			    myfile << "lxc.network.ipv4 = " << lxcIPs[i-1] << "/16\n";
+			}
 			myfile << "lxc.aa_profile = unconfined\n";
 		        myfile << "lxc.aa_allow_incomplete = 1\n";
 			myfile << "lxc.mount.auto=proc\n";
                         myfile << "lxc.environment = HOME=/home/kronos\n";
 			myfile.close();
 		}
-
-		system(("sed \'s/@NODEID@/" + std::to_string(i) + "/g\' " + startupCmdsDir + "/olsrd_config.template > /tmp/lxc-" + std::to_string(i) + "/lxc-" + std::to_string(i) + "-olsrd-config").c_str());
-		
 		
 	}
 	
@@ -53,7 +56,6 @@ void LXCManager::createConfigFiles() {
 		}
 		startup_file.close();
 	}
-
 	system("chmod +x /tmp/startup.sh");
 
 	file_name = "/tmp/teardown.sh";
@@ -107,7 +109,9 @@ void LXCManager::startLXCs() {
 	char cwd[MAX_BUF];
 	if (getcwd(cwd, sizeof(cwd)) == NULL)
             perror("getcwd() error");
-	system("/tmp/startup.sh");
+        std::cout << "Running startup " << std::endl;
+	system("sudo /tmp/startup.sh");
+        std::cout << "Startup finished " << std::endl;
 	for (i = 1; i <= numLxcs; i++) {
 		string default_cmd = "sleep 10";
 		bool is_cmd_file = false;

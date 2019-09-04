@@ -10,3 +10,16 @@ def build(bld):
     obj.env.append_value("LINKFLAGS", ["-lkronosapi"])
     obj.env.append_value("LIB", ["kronosapi"])
     
+    obj = bld.create_ns3_program('simple_p2p_network',
+                                 ['csma', 'point-to-point', 'internet', 'nix-vector-routing', 'applications', 'tap-bridge', 'internet', 'bridge', 'applications'])
+    obj.source = ['simple_p2p_network.cc', 'start_lxcs.cc']
+    obj.env.append_value("LINKFLAGS", ["-lkronosapi"])
+    obj.env.append_value("LIB", ["kronosapi"])
+
+
+    obj = bld.create_ns3_program('campus_network',
+                                 ['csma', 'point-to-point', 'internet', 'nix-vector-routing', 'applications', 'tap-bridge', 'internet', 'bridge', 'applications'])
+    obj.source = ['campus_network.cc', 'start_lxcs.cc']
+    obj.env.append_value("LINKFLAGS", ["-lkronosapi"])
+    obj.env.append_value("LIB", ["kronosapi"])
+
