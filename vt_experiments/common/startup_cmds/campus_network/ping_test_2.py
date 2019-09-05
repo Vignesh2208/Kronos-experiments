@@ -10,9 +10,7 @@ parser.add_argument('--target', metavar='target', type=int, default=2,
 
 args = parser.parse_args()
 
-#PING_CMD = "ping -c 10 {ip}"
-PING_CLI_CMD = 'python /home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/startup_cmds/campus_network/udp_ping_client.py {server_ip}'
-PING_SERVER_CMD = 'python /home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/startup_cmds/campus_network/udp_ping_server.py {client_ip}'
+PING_CMD = "ping -c 100 {ip} -i 0.2"
 
 lxc_ips = []
 
@@ -24,11 +22,9 @@ for i in xrange(0, args.nLXCs):
 
 print 'LXC IPs = ', lxc_ips
 target = args.target
-with open('lxc-1-cmds.txt', 'w') as f:
-    f.write(PING_SERVER_CMD.format(client_ip=lxc_ips[target-1]) + '\n')
 
 with open('lxc-%d-cmds.txt' %(target), 'w') as f:
-    f.write(PING_CLI_CMD.format(server_ip=lxc_ips[0]) + '\n')
+    f.write(PING_CMD.format(ip=lxc_ips[0]) + '\n')
 
 #for i in xrange(0, args.nLXCs):
 #    if i == 1:

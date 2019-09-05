@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/547094.I_Am_Legend_and_Other_Stories', u'vote_count': u'409', u'score': u'37,201', u'author': u'Richard Matheson', u'title': u'I Am Legend and Other Stories'}

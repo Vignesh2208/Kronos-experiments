@@ -16,6 +16,8 @@ void LXCManager::createConfigFiles() {
 	int i;
         
 	string file_name;
+
+        system("sudo rm -rf /tmp/lxc*");
 	
 	for (i = 1; i <= numLxcs; i++) {
 		system(("mkdir -p /tmp/lxc-" + std::to_string(i)).c_str());

@@ -161,9 +161,7 @@ main (int argc, char *argv[])
         }
   }
   
-   lxcManager.createConfigFiles();
-   std::cout << "Starting LXCs ... " << std::endl;
-   lxcManager.startLXCs();
+
 
    NS_LOG_INFO ("Create nodes.");
    for (int i =0; i < nSimHostsperSwitch*nLANSwitches; i++) {
@@ -362,24 +360,6 @@ main (int argc, char *argv[])
         bridgeHelper.Install(switches.Get(i), bridgedDevices[i]);
    }
 
-   NS_LOG_INFO("Setting TapBridges");
-   int lxc_counter = 1;
-   for (int i = 0; i < nLANSwitches; i++) {
-        for (int j = 0; j < nLXCsperSwitch; j++) {
-                tapBridge.SetAttribute ("DeviceName", StringValue ("tap-" + std::to_string(lxc_counter)));
-                tapBridge.Install (emuHosts.Get(lxc_counter - 1), emuHostDevices.Get(lxc_counter - 1));
-                Ptr<Ipv4> ipv4_add = emuHosts.Get(lxc_counter - 1)->GetObject<Ipv4>();
-                Ipv4InterfaceAddress iaddr = ipv4_add->GetAddress (1,0);
-                Ipv4Address addri = iaddr.GetLocal ();
-                std::cout << "IP ADDress of lxc-" << lxc_counter << " is: " << addri << std::endl; 
-                std::cout << "MAC address is: " << emuHostDevices.Get(lxc_counter - 1)->GetAddress() << std::endl;
-                lxc_counter ++;
-        }
-   }
-   
-   
-  std::cout << "Created " << NodeList::GetNNodes () << " nodes." << std::endl; 
-
 
   TIMER_TYPE routingStart;
   TIMER_NOW (routingStart);
@@ -395,9 +375,41 @@ main (int argc, char *argv[])
   std::cout << "Routing tables population took "
             << TIMER_DIFF (routingEnd, routingStart) << std::endl;
 
+
+   lxcManager.createConfigFiles();
+   std::cout << "Starting LXCs ... " << std::endl;
+   lxcManager.startLXCs();
+
+   NS_LOG_INFO("Setting TapBridges");
+   int lxc_counter = 1;
+   for (int i = 0; i < nLANSwitches; i++) {
+        for (int j = 0; j < nLXCsperSwitch; j++) {
+                tapBridge.SetAttribute ("DeviceName", StringValue ("tap-" + std::to_string(lxc_counter)));
+                tapBridge.Install (emuHosts.Get(lxc_counter - 1), emuHostDevices.Get(lxc_counter - 1));
+                //Ptr<Ipv4> ipv4_add = emuHosts.Get(lxc_counter - 1)->GetObject<Ipv4>();
+                //Ipv4InterfaceAddress iaddr = ipv4_add->GetAddress (1,0);
+                //Ipv4Address addri = iaddr.GetLocal ();
+                //std::cout << "IP ADDress of lxc-" << lxc_counter << " is: " << addri << std::endl; 
+                //std::cout << "MAC address is: " << emuHostDevices.Get(lxc_counter - 1)->GetAddress() << std::endl;
+                lxc_counter ++;
+        }
+   }
+   
+   
+  std::cout << "Created " << NodeList::GetNNodes () << " nodes." << std::endl; 
+  RngSeedManager::SetSeed (12);
+  RngSeedManager::SetRun(101);
+
+  
+
   std::cout << "Running simulator..." << std::endl;
   TIMER_NOW (t1);
   if (enable_kronos) {
+        // Need to run the Simulator first for a bit to flush out all the unwanted multi cast router solicitation messages
+        // which are sent upon lxc startup.
+        Simulator::Stop (Seconds(10));
+        Simulator::Run ();
+
 	std::cout << "Synchronize and Freeze initiated !" << std::endl;	
 	while(synchronizeAndFreeze(num_lxcs) <= 0) {
 		usleep(1000000);
@@ -411,7 +423,8 @@ main (int argc, char *argv[])
 	       Simulator::Run ();
 	       progress_n_rounds(1);
                time_elapsed += (int) advance_ns_per_round;
-               std::cout << "Virtual Time Elapsed: (sec): " << (float)time_elapsed/NS_IN_SEC << std::endl;
+               if (i % 1000 == 0)
+                        std::cout << "Virtual Time Elapsed: (sec): " << (float)time_elapsed/NS_IN_SEC << std::endl;
 	}
 	stopExp();
 

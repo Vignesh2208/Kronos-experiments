@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/24770.Uglies', u'vote_count': u'344', u'score': u'32,726', u'author': u'Scott Westerfeld', u'title': u'Uglies (Uglies, #1)'}

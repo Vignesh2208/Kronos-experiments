@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/24983.Doomsday_Book', u'vote_count': u'281', u'score': u'25,312', u'author': u'Connie Willis', u'title': u'Doomsday Book (Oxford Time Travel #1)'}

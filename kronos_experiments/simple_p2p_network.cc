@@ -257,6 +257,8 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
                 lxc_counter ++;
         }
    }
+
+   //csma_host_sw.EnablePcapAll ("simple-p2p", false);
    
    
    std::cout << "Created " << NodeList::GetNNodes () << " nodes." << std::endl;
@@ -283,6 +285,11 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
 
    TIMER_NOW (t1);
    if (enable_kronos) {
+        // Need to run the Simulator first for a bit to flush out all the unwanted multi cast router solicitation messages
+        // which are sent upon lxc startup.
+        Simulator::Stop (Seconds(10));
+        Simulator::Run ();
+
 	std::cout << "Synchronize and Freeze initiated !" << std::endl;	
 	while(synchronizeAndFreeze(num_lxcs) <= 0) {
 		usleep(1000000);

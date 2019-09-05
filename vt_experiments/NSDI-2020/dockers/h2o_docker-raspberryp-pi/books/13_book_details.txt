@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/13.The_Ultimate_Hitchhiker_s_Guide_to_the_Galaxy', u'vote_count': u'162', u'score': u'110,596', u'author': u'Douglas Adams', u'title': u"The Ultimate Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy #1-5)"}

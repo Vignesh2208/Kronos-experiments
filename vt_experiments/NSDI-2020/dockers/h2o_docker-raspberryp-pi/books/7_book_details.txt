@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/29579.Foundation', u'vote_count': u'589', u'score': u'153,000', u'author': u'Isaac Asimov', u'title': u'Foundation (Foundation, #1)'}

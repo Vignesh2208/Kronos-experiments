@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/29580.Second_Foundation', u'vote_count': u'323', u'score': u'27,413', u'author': u'Isaac Asimov', u'title': u'Second Foundation (Foundation, #3)'}

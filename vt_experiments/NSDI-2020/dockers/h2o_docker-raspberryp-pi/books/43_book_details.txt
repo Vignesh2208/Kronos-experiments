@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/61666.Contact', u'vote_count': u'471', u'score': u'43,096', u'author': u'Carl Sagan', u'title': u'Contact'}
