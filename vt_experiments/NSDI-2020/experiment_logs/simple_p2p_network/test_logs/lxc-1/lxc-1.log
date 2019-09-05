@@ -1,0 +1,5 @@
+Waiting for 2 secs 
+Waiting for all child processes to finish ... 
+Starting Process: sudo h2o -c /home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/NSDI-2020/h2o.conf
+sudo: unable to resolve host lxc-1: Connection refused
+[INFO] raised RLIMIT_NOFILE to 1048576

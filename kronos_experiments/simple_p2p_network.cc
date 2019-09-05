@@ -81,20 +81,17 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
 
  int main (int argc, char** argv)
  {
- #if 0 
-   LogComponentEnable ("Ipv6L3Protocol", LOG_LEVEL_ALL);
-   LogComponentEnable ("Icmpv6L4Protocol", LOG_LEVEL_ALL);
-   LogComponentEnable ("Ipv6StaticRouting", LOG_LEVEL_ALL);
-   LogComponentEnable ("Ipv6Interface", LOG_LEVEL_ALL);
-   LogComponentEnable ("Ping6Application", LOG_LEVEL_ALL);
- #endif
+
+   // Set up some default values for the simulation.
+   Config::SetDefault ("ns3::OnOffApplication::PacketSize", UintegerValue (1024));
+   Config::SetDefault ("ns3::OnOffApplication::DataRate", StringValue ("10Mb/s"));
 
    typedef std::vector<NetDeviceContainer> vectorOfNetDeviceContainer;
-   //typedef std::vector<vectorOfNetDeviceContainer> vectorOfVectorOfNetDeviceContainer;
-   //typedef std::vector<BridgeHelper> vectorOfBridgeHelper;
  
    int num_lxcs = 2;
    string startup_cmds_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/startup_cmds/simple_p2p_network";
+   string logs_base_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/NSDI-2020/experiment_logs/simple_p2p_network";
+   string log_folder = "test_logs";
    bool enable_kronos = false;
    long num_insns_per_round = 1000000;
    float relative_cpu_speed = 1.0;
@@ -106,6 +103,8 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    int nLXCsperSwitch = 1;
    int nSwitches = 2;
    int nSimHostsperSwitch = 1;
+   int percentageSinks = 10;
+   int INIT_DELAY_SECS = 10;
 
 
    TIMER_TYPE t0, t1, t2;
@@ -128,7 +127,11 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    cmd.AddValue ("nLXCsperSwitch", "Number of LXCs", nLXCsperSwitch); 
    cmd.AddValue ("nSimHostsperSwitch", "Number of Simulated Hosts per switch", nSimHostsperSwitch); 
    cmd.AddValue ("nSwitches", "Number of Switches", nSwitches); 
+   cmd.AddValue ("logFolder", "Folder Name in logs base dir", log_folder); 
    cmd.Parse (argc, argv);
+
+   if (!enable_kronos)
+        INIT_DELAY_SECS = 0;
 
    num_lxcs = nLXCsperSwitch*nSwitches;
    LXCManager lxcManager(num_lxcs, startup_cmds_dir, enable_kronos,
@@ -258,10 +261,51 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
         }
    }
 
-   //csma_host_sw.EnablePcapAll ("simple-p2p", false);
+  std::cout << "Created " << NodeList::GetNNodes () << " nodes." << std::endl; 
+  RngSeedManager::SetSeed (12);
+  RngSeedManager::SetRun(101);
+
+  NS_LOG_INFO("Starting Applications");
+  Ptr<UniformRandomVariable> urng = CreateObject<UniformRandomVariable> ();
+  int r1, r2;
+  double start_time;
+  for (int i = 0; i < nSwitches; i++)
+    {
+      for (int j = 0; j < nSimHostsperSwitch; j++)
+        {
+          int num_sinks = nSimHostsperSwitch/percentageSinks;
+          if (num_sinks <= 0)
+                break;
+
+          if (j < num_sinks) {
+              PacketSinkHelper sinkHelper
+                ("ns3::TcpSocketFactory",
+                InetSocketAddress (Ipv4Address::GetAny (), 9999));
+
+              ApplicationContainer sinkApp =
+                sinkHelper.Install (simHosts.Get (i*nSimHostsperSwitch + j));
+                  
+              sinkApp.Start (Seconds (INIT_DELAY_SECS));
+          } else {
+              r1 = urng->GetInteger(0, nSwitches - 1);
+              r2 = urng->GetValue (0, num_sinks - 1);
+              start_time = 10 * urng->GetValue ();
+              OnOffHelper client ("ns3::TcpSocketFactory", Address ());
+
+              AddressValue remoteAddress
+                (InetSocketAddress (simHosts.Get (r1*nSimHostsperSwitch + r2)->GetObject<Ipv4>()->GetAddress (1,0).GetLocal (), 9999));
+
+              client.SetAttribute ("Remote", remoteAddress);
+              ApplicationContainer clientApp;
+              clientApp.Add (client.Install (simHosts.Get (i*nSimHostsperSwitch + j)));
+              clientApp.Start (Seconds ((double)INIT_DELAY_SECS + start_time));
+             // std::cout << "Scheduling Client APP start at : " << (double)INIT_DELAY_SECS + start_time << " for address: " << simHosts.Get (r1*nSimHostsperSwitch + r2)->GetObject<Ipv4>()->GetAddress (1,0).GetLocal () << std::endl;
+         }
+        
+       }
+   }
    
    
-   std::cout << "Created " << NodeList::GetNNodes () << " nodes." << std::endl;
    TIMER_TYPE routingStart;
    TIMER_NOW (routingStart);
 
@@ -287,7 +331,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    if (enable_kronos) {
         // Need to run the Simulator first for a bit to flush out all the unwanted multi cast router solicitation messages
         // which are sent upon lxc startup.
-        Simulator::Stop (Seconds(10));
+        Simulator::Stop (Seconds(INIT_DELAY_SECS));
         Simulator::Run ();
 
 	std::cout << "Synchronize and Freeze initiated !" << std::endl;	
@@ -303,6 +347,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
 	       Simulator::Run ();
 	       progress_n_rounds(1);
                time_elapsed += (int) advance_ns_per_round;
+               if (i % 1000 == 0)
                std::cout << "Virtual Time Elapsed: (sec): " << (float)time_elapsed/NS_IN_SEC << std::endl;
 	}
 	stopExp();
@@ -315,11 +360,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
 	       usleep(10000);
 	    }
     }
-   
-/*do 
- {
-   cout << '\n' << "Press a key to continue...";
- } while (cin.get() != '\n');*/
+
 
    TIMER_NOW (t2);
    std::cout << "Simulator finished." << std::endl;
@@ -331,6 +372,10 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    std::cout << "Simulator init time: " << d1 << std::endl;
    std::cout << "Simulator run time: " << d2 << std::endl;
    std::cout << "Total elapsed time: " << d1 + d2 << std::endl;
+
+   system(("sudo mkdir -p " + logs_base_dir + "/" + log_folder).c_str());
+   system(("sudo cp -R /tmp/lxc* " + logs_base_dir + "/" + log_folder).c_str());
+   system(("sudo chmod -R 777 " + logs_base_dir).c_str());
    return 0;
  
 

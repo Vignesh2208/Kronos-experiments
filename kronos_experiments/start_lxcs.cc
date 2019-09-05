@@ -77,8 +77,9 @@ void LXCManager::createConfigFiles() {
 		teardown_file.close();
 	}
 	system("chmod +x /tmp/teardown.sh");
+        system("sudo rm /tmp/lxc-*.txt");
 
-	string copy_cmd = "cp " + startupCmdsDir + "/* /tmp";
+	string copy_cmd = "cp " + startupCmdsDir + "/*.txt /tmp";
 	system(copy_cmd.c_str());
 	for (i = 1; i <= numLxcs; i++) {
 		std::ifstream infile;

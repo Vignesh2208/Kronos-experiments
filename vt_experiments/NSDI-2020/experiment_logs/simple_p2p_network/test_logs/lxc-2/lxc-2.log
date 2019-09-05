@@ -1,0 +1,65 @@
+Waiting for 2 secs 
+Waiting for all child processes to finish ... 
+Starting Process: /home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/client_http2 10.1.1.1 10 100
+Waiting for 1 sec for server to start ...
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.3571
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.360811
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.381986
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.34445
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.385243
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.328305
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.321193
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.338864
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.346698
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.342046
+All child processes exited ! 

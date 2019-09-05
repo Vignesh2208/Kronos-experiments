@@ -81,6 +81,8 @@ main (int argc, char *argv[])
 
   int num_lxcs;
   string startup_cmds_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/startup_cmds/campus_network";
+  string logs_base_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/NSDI-2020/experiment_logs/simple_p2p_network";
+  string log_folder = "test_logs";
   bool enable_kronos = false;
   long num_insns_per_round = 1000000;
   float relative_cpu_speed = 1.0;
@@ -88,6 +90,8 @@ main (int argc, char *argv[])
   float advance_ns_per_round;
   long time_elapsed = 0;
   long num_rounds_to_run;
+  int percentageSinks = 10;
+  int INIT_DELAY_SECS = 10;
 
   int nLXCsperSwitch = 1;
   int nTotalSwitches = 25;
@@ -106,6 +110,9 @@ main (int argc, char *argv[])
   csma_sw_sw.SetChannelAttribute ("DataRate", StringValue ("1Gbps"));
   csma_sw_sw.SetChannelAttribute ("Delay", TimeValue (MilliSeconds (1)));
 
+   // Set up some default values for the simulation.
+   Config::SetDefault ("ns3::OnOffApplication::PacketSize", UintegerValue (1024));
+   Config::SetDefault ("ns3::OnOffApplication::DataRate", StringValue ("10Mb/s"));
 
   CsmaHelper csma_host_sw;
   csma_host_sw.SetChannelAttribute ("DataRate", StringValue ("1Gbps"));
@@ -120,13 +127,16 @@ main (int argc, char *argv[])
   cmd.AddValue ("runTimeSecs", "Running Time Secs", run_time_secs); 
   cmd.AddValue ("enableKronos", "Enable/disable Kronos", enable_kronos);
   cmd.AddValue ("startupCmds", "Start up cmds directory", startup_cmds_dir);
-
+  cmd.AddValue ("logFolder", "Folder Name in logs base dir", log_folder); 
   cmd.Parse (argc,argv);
 
 
   num_lxcs = nLXCsperSwitch*nLANSwitches;
   LXCManager lxcManager(num_lxcs, startup_cmds_dir, enable_kronos,
 			num_insns_per_round, relative_cpu_speed);
+
+  if (!enable_kronos)
+        INIT_DELAY_SECS = 0;
 
 
   TapBridgeHelper tapBridge;
@@ -395,10 +405,49 @@ main (int argc, char *argv[])
         }
    }
    
-   
   std::cout << "Created " << NodeList::GetNNodes () << " nodes." << std::endl; 
   RngSeedManager::SetSeed (12);
   RngSeedManager::SetRun(101);
+
+  NS_LOG_INFO("Starting Applications");
+  Ptr<UniformRandomVariable> urng = CreateObject<UniformRandomVariable> ();
+  int r1, r2;
+  double start_time;
+  for (int i = 0; i < nLANSwitches; ++i)
+    {
+      for (int j = 0; j < nSimHostsperSwitch; ++j)
+        {
+          int num_sinks = nSimHostsperSwitch/percentageSinks;
+          if (num_sinks <= 0)
+                break;
+          if (j < num_sinks) {
+              PacketSinkHelper sinkHelper
+                ("ns3::TcpSocketFactory",
+                InetSocketAddress (Ipv4Address::GetAny (), 9999));
+
+              ApplicationContainer sinkApp =
+                sinkHelper.Install (simHosts.Get (i*nSimHostsperSwitch + j));
+
+              sinkApp.Start (Seconds (INIT_DELAY_SECS));
+          } else {
+              r1 = urng->GetInteger(0, nLANSwitches - 1);
+              r2 = urng->GetValue (0, num_sinks - 1);
+              start_time = 10 * urng->GetValue ();
+              OnOffHelper client ("ns3::TcpSocketFactory", Address ());
+
+              AddressValue remoteAddress
+                (InetSocketAddress (simHosts.Get (r1*nSimHostsperSwitch + r2)->GetObject<Ipv4>()->GetAddress (1,0).GetLocal (), 9999));
+
+              client.SetAttribute ("Remote", remoteAddress);
+              ApplicationContainer clientApp;
+              clientApp.Add (client.Install (simHosts.Get (i*nSimHostsperSwitch + j)));
+              clientApp.Start (Seconds ((double)INIT_DELAY_SECS + start_time));
+         }
+        
+       }
+   }
+   
+
 
   
 
@@ -407,7 +456,7 @@ main (int argc, char *argv[])
   if (enable_kronos) {
         // Need to run the Simulator first for a bit to flush out all the unwanted multi cast router solicitation messages
         // which are sent upon lxc startup.
-        Simulator::Stop (Seconds(10));
+        Simulator::Stop (Seconds(INIT_DELAY_SECS));
         Simulator::Run ();
 
 	std::cout << "Synchronize and Freeze initiated !" << std::endl;	
@@ -449,6 +498,10 @@ main (int argc, char *argv[])
   std::cout << "Simulator init time: " << d1 << std::endl;
   std::cout << "Simulator run time: " << d2 << std::endl;
   std::cout << "Total elapsed time: " << d1 + d2 << std::endl;
+
+   system(("sudo mkdir -p " + logs_base_dir + "/" + log_folder).c_str());
+   system(("sudo cp -R /tmp/lxc* " + logs_base_dir + "/" + log_folder).c_str());
+   system(("sudo chmod -R 777 " + logs_base_dir).c_str());
   return 0;
 }
 
