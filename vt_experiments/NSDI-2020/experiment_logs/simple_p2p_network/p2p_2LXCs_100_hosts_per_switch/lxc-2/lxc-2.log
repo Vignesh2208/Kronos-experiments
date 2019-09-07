@@ -1,0 +1,84 @@
+sudo: unable to resolve host lxc-2: Connection refused
+Waiting for 1 sec for server to start ...
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 4
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 5
+Time elapsed for request completion: 0.0158
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 6
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 7
+Time elapsed for request completion: 0.00575
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 8
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 9
+Time elapsed for request completion: 0.0061
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 10
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 11
+Time elapsed for request completion: 0.00585
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 12
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 13
+Time elapsed for request completion: 0.0056
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 14
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 15
+Time elapsed for request completion: 0.00665
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 16
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 17
+Time elapsed for request completion: 0.00655
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 18
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 19
+Time elapsed for request completion: 0.0066
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 20
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 21
+Time elapsed for request completion: 0.0061
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 22
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 23
+Time elapsed for request completion: 0.00615
+Ignoring PID: 3
+TracerID: 0, STOP Command received. Stopping tracer ...

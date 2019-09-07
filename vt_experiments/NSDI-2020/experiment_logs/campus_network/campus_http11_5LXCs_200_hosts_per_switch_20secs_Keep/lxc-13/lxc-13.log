@@ -1,0 +1,88 @@
+sudo: unable to resolve host lxc-13: Connection refused
+Waiting for 1 sec for server to start ...
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Boost connect error 
+Time elapsed for request completion: 2.06675
+Time elapsed for request completion: 0.21106
+Time elapsed for request completion: 0.47098
+Time elapsed for request completion: 0.15901
+Time elapsed for request completion: 0.19643
+Time elapsed for request completion: 0.28766
+Time elapsed for request completion: 0.23491
+Time elapsed for request completion: 0.25621
+Time elapsed for request completion: 0.16806
+Time elapsed for request completion: 0.14125
+Time elapsed for request completion: 0.14703
+Time elapsed for request completion: 0.20685
+Time elapsed for request completion: 0.13884
+Time elapsed for request completion: 0.10769
+Time elapsed for request completion: 0.2001
+Time elapsed for request completion: 0.17209
+Time elapsed for request completion: 0.16932
+Time elapsed for request completion: 0.18602
+Time elapsed for request completion: 0.14834
+Time elapsed for request completion: 0.18498
+Time elapsed for request completion: 0.23294
+Time elapsed for request completion: 0.14726
+Time elapsed for request completion: 0.14505
+Time elapsed for request completion: 0.12969
+Time elapsed for request completion: 0.11062
+Time elapsed for request completion: 0.17889
+Time elapsed for request completion: 0.40151
+Time elapsed for request completion: 0.16584
+Time elapsed for request completion: 0.40615
+Time elapsed for request completion: 0.26304
+Time elapsed for request completion: 0.26683
+Time elapsed for request completion: 0.16513
+Time elapsed for request completion: 0.14798
+Time elapsed for request completion: 0.23734
+Time elapsed for request completion: 0.16525
+Time elapsed for request completion: 0.3671
+Time elapsed for request completion: 0.23641
+Time elapsed for request completion: 0.23531
+Time elapsed for request completion: 0.21641
+Time elapsed for request completion: 0.19284
+Time elapsed for request completion: 0.15051
+Time elapsed for request completion: 0.17641
+Time elapsed for request completion: 0.12746
+Time elapsed for request completion: 0.13761
+Time elapsed for request completion: 0.07706
+Time elapsed for request completion: 0.07146
+Time elapsed for request completion: 0.09897
+Time elapsed for request completion: 0.1054
+Time elapsed for request completion: 0.10813
+Time elapsed for request completion: 0.15867
+Time elapsed for request completion: 0.20318
+Time elapsed for request completion: 0.16118
+Time elapsed for request completion: 0.10508
+Time elapsed for request completion: 0.18431
+Time elapsed for request completion: 0.14524
+Time elapsed for request completion: 0.15035
+Time elapsed for request completion: 0.15128
+Time elapsed for request completion: 0.13021
+Time elapsed for request completion: 0.15262
+Time elapsed for request completion: 0.17883
+TracerID: 0, STOP Command received. Stopping tracer ...

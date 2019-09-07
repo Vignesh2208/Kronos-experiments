@@ -1,0 +1,35 @@
+sudo: unable to resolve host lxc-12: Connection refused
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 0.11874
+Time elapsed for request completion: 0.31206
+Time elapsed for request completion: 0.6838
+Time elapsed for request completion: 0.4953
+Time elapsed for request completion: 0.27743
+Time elapsed for request completion: 0.48427
+Time elapsed for request completion: 0.48718
+Time elapsed for request completion: 0.22776
+Time elapsed for request completion: 0.42053
+Time elapsed for request completion: 0.34424
+Time elapsed for request completion: 0.28997
+Time elapsed for request completion: 0.54259
+Time elapsed for request completion: 0.44633
+Time elapsed for request completion: 0.41158
+Time elapsed for request completion: 0.89469
+Time elapsed for request completion: 0.49654
+Time elapsed for request completion: 0.3851
+Time elapsed for request completion: 0.48813
+Time elapsed for request completion: 0.45482
+Time elapsed for request completion: 0.75711
+Time elapsed for request completion: 0.41604
+Time elapsed for request completion: 0.29111
+Time elapsed for request completion: 0.60452
+Time elapsed for request completion: 0.4776
+Time elapsed for request completion: 0.43038
+Time elapsed for request completion: 0.56357
+Time elapsed for request completion: 0.52102
+Time elapsed for request completion: 0.64005
+Time elapsed for request completion: 0.46023
+Time elapsed for request completion: 0.45152
+Time elapsed for request completion: 0.72904
+Time elapsed for request completion: 0.81305
+TracerID: 0, STOP Command received. Stopping tracer ...

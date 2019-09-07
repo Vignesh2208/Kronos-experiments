@@ -81,10 +81,10 @@ main (int argc, char *argv[])
 
   int num_lxcs;
   string startup_cmds_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/startup_cmds/campus_network";
-  string logs_base_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/NSDI-2020/experiment_logs/simple_p2p_network";
+  string logs_base_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/NSDI-2020/experiment_logs/campus_network";
   string log_folder = "test_logs";
   bool enable_kronos = false;
-  long num_insns_per_round = 1000000;
+  long num_insns_per_round = 10000;
   float relative_cpu_speed = 1.0;
   long run_time_secs = 10;
   float advance_ns_per_round;
@@ -104,24 +104,25 @@ main (int argc, char *argv[])
   TIMER_NOW (t0);
   std::cout << " ==== DARPA NMS CAMPUS NETWORK SIMULATION ====" << std::endl;
 
-  bool nix = false;
+  bool nix = true;
 
   CsmaHelper csma_sw_sw;
-  csma_sw_sw.SetChannelAttribute ("DataRate", StringValue ("1Gbps"));
-  csma_sw_sw.SetChannelAttribute ("Delay", TimeValue (MilliSeconds (1)));
+  csma_sw_sw.SetChannelAttribute ("DataRate", StringValue ("100Gbps"));
+  csma_sw_sw.SetChannelAttribute ("Delay", TimeValue (MicroSeconds (10)));
 
    // Set up some default values for the simulation.
    Config::SetDefault ("ns3::OnOffApplication::PacketSize", UintegerValue (1024));
-   Config::SetDefault ("ns3::OnOffApplication::DataRate", StringValue ("10Mb/s"));
+   Config::SetDefault ("ns3::OnOffApplication::DataRate", StringValue ("5Mb/s"));
+   
 
   CsmaHelper csma_host_sw;
-  csma_host_sw.SetChannelAttribute ("DataRate", StringValue ("1Gbps"));
-  csma_host_sw.SetChannelAttribute ("Delay", TimeValue (MilliSeconds (1)));
+  csma_host_sw.SetChannelAttribute ("DataRate", StringValue ("10Gbps"));
+  csma_host_sw.SetChannelAttribute ("Delay", TimeValue (MicroSeconds (10)));
 
   CommandLine cmd;
-  cmd.AddValue ("LAN", "Number of simulated nodes per LAN Switch [1]", nSimHostsperSwitch);
+  cmd.AddValue ("nSimHostsperSwitch", "Number of simulated nodes per LAN Switch [1]", nSimHostsperSwitch);
   cmd.AddValue ("nix", "Toggle the use of nix-vector or global routing", nix);
-  cmd.AddValue ("nLXCsperLAN", "Number of VMs/LXCs per LAN Switch", nLXCsperSwitch); 
+  cmd.AddValue ("nLXCsperSwitch", "Number of VMs/LXCs per LAN Switch", nLXCsperSwitch); 
   cmd.AddValue ("numInsnsPerRound", "Number insns per round", num_insns_per_round); 
   cmd.AddValue ("relCpuSpeed", "Relative CPU speed", relative_cpu_speed); 
   cmd.AddValue ("runTimeSecs", "Running Time Secs", run_time_secs); 
@@ -433,6 +434,7 @@ main (int argc, char *argv[])
               r1 = urng->GetInteger(0, nLANSwitches - 1);
               r2 = urng->GetValue (0, num_sinks - 1);
               start_time = 10 * urng->GetValue ();
+              //start_time = 0.0;
               OnOffHelper client ("ns3::TcpSocketFactory", Address ());
 
               AddressValue remoteAddress

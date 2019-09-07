@@ -1,0 +1,54 @@
+sudo: unable to resolve host lxc-11: Connection refused
+Waiting for 1 sec for server to start ...
+Boost connect error: Connection reset by peer
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Time elapsed for request completion: 0.99836
+Time elapsed for request completion: 0.16568
+Time elapsed for request completion: 0.23559
+Time elapsed for request completion: 0.30086
+Time elapsed for request completion: 0.24024
+Time elapsed for request completion: 0.34183
+Time elapsed for request completion: 0.30804
+Time elapsed for request completion: 0.34227
+Time elapsed for request completion: 0.2036
+Time elapsed for request completion: 0.22244
+Time elapsed for request completion: 0.20585
+Time elapsed for request completion: 0.43953
+Time elapsed for request completion: 0.39051
+Time elapsed for request completion: 0.34557
+Time elapsed for request completion: 0.40954
+Time elapsed for request completion: 0.36729
+Time elapsed for request completion: 0.12195
+Time elapsed for request completion: 0.42923
+Time elapsed for request completion: 0.30038
+Time elapsed for request completion: 0.35363
+Time elapsed for request completion: 0.40184
+Time elapsed for request completion: 0.35568
+Time elapsed for request completion: 0.50225
+Time elapsed for request completion: 0.43844
+Time elapsed for request completion: 0.26586
+Time elapsed for request completion: 0.23189
+Time elapsed for request completion: 0.26348
+Time elapsed for request completion: 0.312
+Time elapsed for request completion: 0.36217
+Time elapsed for request completion: 0.22732
+Time elapsed for request completion: 0.37605
+Time elapsed for request completion: 0.32706
+Boost connect error: Operation canceled
+Time elapsed for request completion: 2.10808
+Time elapsed for request completion: 0.1084
+Time elapsed for request completion: 0.23142
+Time elapsed for request completion: 0.13705
+Time elapsed for request completion: 0.36291
+Time elapsed for request completion: 0.49573
+Time elapsed for request completion: 0.33292
+Time elapsed for request completion: 0.28255
+TracerID: 0, STOP Command received. Stopping tracer ...

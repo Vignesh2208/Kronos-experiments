@@ -21,9 +21,11 @@
 
 using boost::asio::ip::tcp;
 
+
 void send_request(std::string server_ip, std::string path) {
     boost::asio::io_service io_service;
 
+    try {
     // Get a list of endpoints corresponding to the server name.
     tcp::resolver resolver(io_service);
     tcp::resolver::query query(server_ip, "http");
@@ -49,6 +51,8 @@ void send_request(std::string server_ip, std::string path) {
     // Read the response status line. The response streambuf will automatically
     // grow to accommodate the entire line. The growth may be limited by passing
     // a maximum size to the streambuf constructor.
+
+
     boost::asio::streambuf response;
     boost::asio::read_until(socket, response, "\r\n");
 
@@ -89,8 +93,11 @@ void send_request(std::string server_ip, std::string path) {
     while (boost::asio::read(socket, response,
           boost::asio::transfer_at_least(1), error));
       //std::cout << &response;
-    if (error != boost::asio::error::eof)
-      throw boost::system::system_error(error);
+    //if (error != boost::asio::error::eof)
+    //  throw boost::system::system_error(error); 
+  }  catch (boost::exception &e) {
+    std::cout << "Boost connect error " << std::endl;
+  }
 }
 
 void send_sub_requests(std::string server_ip, int start_book_no, int num_sub_requests) {

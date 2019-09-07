@@ -93,7 +93,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    string logs_base_dir = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/NSDI-2020/experiment_logs/simple_p2p_network";
    string log_folder = "test_logs";
    bool enable_kronos = false;
-   long num_insns_per_round = 1000000;
+   long num_insns_per_round = 10000;
    float relative_cpu_speed = 1.0;
    long run_time_secs = 10;
    float advance_ns_per_round;
@@ -111,12 +111,12 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    TIMER_NOW (t0);
 
    CsmaHelper csma_sw_sw;
-   csma_sw_sw.SetChannelAttribute ("DataRate", DataRateValue (5000000));
-   csma_sw_sw.SetChannelAttribute ("Delay", TimeValue (MilliSeconds (1)));
+   csma_sw_sw.SetChannelAttribute ("DataRate", StringValue ("100Gbps"));
+   csma_sw_sw.SetChannelAttribute ("Delay", TimeValue (MicroSeconds (10)));
 
    CsmaHelper csma_host_sw;
-   csma_host_sw.SetChannelAttribute ("DataRate", DataRateValue (5000000));
-   csma_host_sw.SetChannelAttribute ("Delay", TimeValue (MilliSeconds (1)));
+   csma_host_sw.SetChannelAttribute ("DataRate", StringValue ("10Gbps"));
+   csma_host_sw.SetChannelAttribute ("Delay", TimeValue (MicroSeconds (10)));
 
    CommandLine cmd;
    cmd.AddValue ("numInsnsPerRound", "Number insns per round", num_insns_per_round); 
@@ -274,7 +274,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
       for (int j = 0; j < nSimHostsperSwitch; j++)
         {
           int num_sinks = nSimHostsperSwitch/percentageSinks;
-          if (num_sinks <= 0)
+          if (num_sinks <= 1)
                 break;
 
           if (j < num_sinks) {
@@ -290,6 +290,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
               r1 = urng->GetInteger(0, nSwitches - 1);
               r2 = urng->GetValue (0, num_sinks - 1);
               start_time = 10 * urng->GetValue ();
+              //start_time = 0.0;
               OnOffHelper client ("ns3::TcpSocketFactory", Address ());
 
               AddressValue remoteAddress
@@ -310,8 +311,13 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    TIMER_NOW (routingStart);
 
    // Calculate routing tables
-   std::cout << "Populating Routing tables..." << std::endl;
-   Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+   //std::cout << "Populating Routing tables..." << std::endl;
+   //Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+
+   
+   Ipv4NixVectorHelper nixRouting;
+   internetv4.SetRoutingHelper (nixRouting); // has effect on the next Install ()
+   
 
    TIMER_TYPE routingEnd;
    TIMER_NOW (routingEnd);

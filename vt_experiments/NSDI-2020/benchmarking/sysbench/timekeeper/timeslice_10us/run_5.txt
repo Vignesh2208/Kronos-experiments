@@ -14,7 +14,7 @@ Maximum prime number checked in CPU test: 1000
 
 
 Test execution summary:
-    total time:                          0.0709s
+    total time:                          0.709s
     total number of events:              10000
     total time taken by event execution: 0.0690
     per-request statistics:

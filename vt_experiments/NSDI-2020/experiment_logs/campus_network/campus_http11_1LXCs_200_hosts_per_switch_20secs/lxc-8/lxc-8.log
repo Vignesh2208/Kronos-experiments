@@ -1,0 +1,47 @@
+sudo: unable to resolve host lxc-8: Connection refused
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 0.11701
+Time elapsed for request completion: 0.15619
+Time elapsed for request completion: 0.17669
+Time elapsed for request completion: 0.2202
+Time elapsed for request completion: 0.19736
+Time elapsed for request completion: 0.24286
+Time elapsed for request completion: 0.19175
+Time elapsed for request completion: 0.24575
+Time elapsed for request completion: 0.24771
+Time elapsed for request completion: 0.2734
+Time elapsed for request completion: 0.23983
+Time elapsed for request completion: 0.22569
+Time elapsed for request completion: 0.48078
+Time elapsed for request completion: 0.29067
+Time elapsed for request completion: 0.31262
+Time elapsed for request completion: 0.37163
+Time elapsed for request completion: 0.43284
+Time elapsed for request completion: 0.24939
+Time elapsed for request completion: 0.4562
+Time elapsed for request completion: 0.26976
+Time elapsed for request completion: 0.30471
+Time elapsed for request completion: 0.3674
+Time elapsed for request completion: 0.32019
+Time elapsed for request completion: 0.33848
+Time elapsed for request completion: 0.61993
+Time elapsed for request completion: 0.48135
+Time elapsed for request completion: 0.39747
+Time elapsed for request completion: 0.40188
+Time elapsed for request completion: 0.30645
+Time elapsed for request completion: 0.27663
+Time elapsed for request completion: 0.35419
+Time elapsed for request completion: 0.3548
+Time elapsed for request completion: 0.3953
+Time elapsed for request completion: 0.40064
+Time elapsed for request completion: 0.42148
+Time elapsed for request completion: 0.36821
+Time elapsed for request completion: 0.27695
+Time elapsed for request completion: 0.42834
+Time elapsed for request completion: 0.31416
+Time elapsed for request completion: 0.43337
+Time elapsed for request completion: 0.26211
+Time elapsed for request completion: 0.30091
+Time elapsed for request completion: 0.41047
+Time elapsed for request completion: 0.38497
+TracerID: 0, STOP Command received. Stopping tracer ...

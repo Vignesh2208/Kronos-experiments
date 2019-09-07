@@ -1,0 +1,15 @@
+sudo: unable to resolve host lxc-12: Connection refused
+Waiting for 1 sec for server to start ...
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 4
+Finishing session after |num| requests are done !
+Exiting !
+Ignoring PID: 5
+Time elapsed for request completion: 0.1128
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Ignoring PID: 6
+TracerID: 0, STOP Command received. Stopping tracer ...
