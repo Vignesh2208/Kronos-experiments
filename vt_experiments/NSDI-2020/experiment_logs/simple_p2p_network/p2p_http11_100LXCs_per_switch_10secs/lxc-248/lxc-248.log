@@ -1,0 +1,5 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 248 of etherfile /tmp/arp.txt !
+sudo: unable to resolve host lxc-248: Connection refused
+Listening on 0.0.0.0:9999
+TracerID: 0, STOP Command received. Stopping tracer ...

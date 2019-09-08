@@ -6,6 +6,7 @@
 #include <sys/time.h>
 #include <fstream>
 #include <nghttp2/asio_http2_client.h>
+#include <boost/date_time/posix_time/posix_time.hpp>
 
 using boost::asio::ip::tcp;
 using namespace std;
@@ -16,7 +17,8 @@ using namespace nghttp2::asio_http2::client;
 void trigger_nxt_requests(string dest_ip, int num_requests) {
   boost::system::error_code ec;
   boost::asio::io_service io_service;
-  session sess(io_service, dest_ip, "80");
+  boost::posix_time::time_duration t = boost::posix_time::seconds(1000);
+  session sess(io_service, dest_ip, "80", t);
 
   sess.on_connect([&sess, dest_ip, num_requests](tcp::resolver::iterator endpoint_it) {
     boost::system::error_code ec;
@@ -58,6 +60,7 @@ void initiate_connection(string dest_ip) {
   boost::asio::io_service io_service;
 
   std::cout << "Connecting to server ..." << std::endl;
+  boost::posix_time::time_duration t = boost::posix_time::seconds(1000);
   session sess(io_service, dest_ip, "80");
 
   sess.on_connect([&sess, dest_ip](tcp::resolver::iterator endpoint_it) {
@@ -119,6 +122,7 @@ int num_sub_requests = 100;
 int num_trials = std::stoi(argv[2]);
 int period_ms = std::stoi(argv[3]);
 std::vector<double> time_elapsed;
+
 std::cout << "Waiting for 1 sec for server to start ..." << std::endl;
 std::this_thread::sleep_for (std::chrono::seconds(1));
 

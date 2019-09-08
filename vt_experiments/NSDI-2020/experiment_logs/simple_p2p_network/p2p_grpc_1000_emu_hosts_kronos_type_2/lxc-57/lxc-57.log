@@ -1,0 +1,440 @@
+sudo: unable to resolve host lxc-57: Connection refused
+Waiting for 2 secs 
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50053 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50054 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50057 100 100"
+Waiting for all child processes to finish ... 
+Starting Process: arp -f /tmp/arp.txt
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50051 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50052 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50055 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50056 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50058 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50059 100 100"
+Starting Process: sudo tracer -r 1.000000 -n 10000 -c "/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.61 50060 100 100"
+sudo: unable to resolve host lxc-57: Connection refused
+sudosudo: unable to resolve host lxc-57: Connection refused
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 57 of etherfile /tmp/arp.txt !
+: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+sudo: unable to resolve host lxc-57: Connection refused
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 0.03211 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.03236 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.03262 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.03267 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.03619 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.03639 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.03714 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.04041 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.08252 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.08445 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00125 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00128 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00228 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00164 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00241 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00231 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00167 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00243 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00238 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00178 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00244 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00219 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00186 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00239 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00148 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00192 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0023 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00196 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0022 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00196 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0022 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00135 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00201 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0022 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00128 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00133 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00133 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00135 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00215 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00133 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00135 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00228 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00201 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00137 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00267 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.0014 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00146 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0029 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00133 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00144 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00268 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00147 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00219 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00144 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00219 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00146 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00133 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0022 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00157 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00158 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00157 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00172 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00213 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00185 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00187 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00211 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00197 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00128 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00218 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00125 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00227 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00124 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00228 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00212 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00238 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00246 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00246 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00209 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00128 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00245 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00134 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00211 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00128 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00273 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00132 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.0024 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00219 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00296 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00124 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00231 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00171 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.0027 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00124 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00235 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00131 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.0024 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00124 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.00221 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00125 Server = 10.1.1.61, Port = 50059
+Time elapsed for request completion: 0.00241 Server = 10.1.1.61, Port = 50057
+Time elapsed for request completion: 0.00123 Server = 10.1.1.61, Port = 50055
+Time elapsed for request completion: 0.0021 Server = 10.1.1.61, Port = 50052
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50053
+Time elapsed for request completion: 0.00127 Server = 10.1.1.61, Port = 50056
+Time elapsed for request completion: 0.00128 Server = 10.1.1.61, Port = 50051
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50060
+Time elapsed for request completion: 0.00129 Server = 10.1.1.61, Port = 50058
+Time elapsed for request completion: 0.0013 Server = 10.1.1.61, Port = 50054
+Time elapsed for request completion: 0.00124 Server = 10.1.1.61, Port = 50059
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...
+TracerID: 0, STOP Command received. Stopping tracer ...

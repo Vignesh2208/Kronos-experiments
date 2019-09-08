@@ -158,7 +158,7 @@ main (int argc, char *argv[])
   for (int i = 0; i < num_lxcs; i++) {
      if (num_nodes_assigned > 255) {
          network_start ++;
-         num_nodes_assigned = 1;
+         num_nodes_assigned = 0;
      }
      std::string ip_address = "10.1." + std::to_string(network_start) + "." + std::to_string(num_nodes_assigned); 
      lxcManager.lxcIPs.push_back(ip_address);
@@ -419,7 +419,7 @@ main (int argc, char *argv[])
       for (int j = 0; j < nSimHostsperSwitch; ++j)
         {
           int num_sinks = nSimHostsperSwitch/percentageSinks;
-          if (num_sinks <= 0)
+          if (num_sinks <= 1)
                 break;
           if (j < num_sinks) {
               PacketSinkHelper sinkHelper

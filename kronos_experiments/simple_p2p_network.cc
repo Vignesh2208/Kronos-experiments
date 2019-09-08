@@ -105,6 +105,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    int nSimHostsperSwitch = 1;
    int percentageSinks = 10;
    int INIT_DELAY_SECS = 10;
+   int numTracersperLXC = 1;
 
 
    TIMER_TYPE t0, t1, t2;
@@ -128,6 +129,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    cmd.AddValue ("nSimHostsperSwitch", "Number of Simulated Hosts per switch", nSimHostsperSwitch); 
    cmd.AddValue ("nSwitches", "Number of Switches", nSwitches); 
    cmd.AddValue ("logFolder", "Folder Name in logs base dir", log_folder); 
+   cmd.AddValue ("numTracersperLXC", "numTracersperLXC", numTracersperLXC); 
    cmd.Parse (argc, argv);
 
    if (!enable_kronos)
@@ -147,14 +149,14 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    NodeContainer allHosts;
 
    BridgeHelper bridgeHelper;
-   vectorOfNetDeviceContainer bridgedDevices(nSwitches);
+   vectorOfNetDeviceContainer bridgedDevices(2*nSwitches);
 
 
    int network_start = 1, num_nodes_assigned = 1;
    for (int i = 0; i < num_lxcs; i++) {
       if (num_nodes_assigned > 255) {
           network_start ++;
-          num_nodes_assigned = 1;
+          num_nodes_assigned = 0;
       }
       std::string ip_address = "10.1." + std::to_string(network_start) + "." + std::to_string(num_nodes_assigned); 
       lxcManager.lxcIPs.push_back(ip_address);
@@ -163,15 +165,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
 
    advance_ns_per_round = num_insns_per_round/relative_cpu_speed;
 
-   if (enable_kronos) {
-	if (initializeExp(1) < 0) {
-		std::cout << "Kronos initialization failed !. Make sure Kronos is loaded ! " << std::endl;
-	}
-   }
-   
-   lxcManager.createConfigFiles();
-   std::cout << "Starting LXCs ... " << std::endl;
-   lxcManager.startLXCs();
+
 
  
    NS_LOG_INFO ("Create nodes.");
@@ -185,7 +179,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
         emuHosts.Add(node);
         allHosts.Add(node);
    }
-   for (int i =0; i < nSwitches; i++) {
+   for (int i =0; i < 2*nSwitches; i++) {
         Ptr<Node> node = CreateObject<Node> ();
         switches.Add(node);
    }
@@ -203,10 +197,23 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    NS_LOG_INFO ("Create channels.");
 
    NS_LOG_INFO("Creating backbone links");
-   for (int i = 0; i < nSwitches - 1; i++) {
+   /*for (int i = 0; i < nSwitches - 1; i++) {
         NetDeviceContainer sw_i_i1_link = csma_sw_sw.Install(NodeContainer(switches.Get(i), switches.Get(i+1)));
         bridgedDevices[i].Add(sw_i_i1_link.Get(0));
         bridgedDevices[i+1].Add(sw_i_i1_link.Get(1));
+   }*/
+
+   for (int i = 0; i < nSwitches; i++) {
+        NetDeviceContainer sw_i_i_plus_n_link = csma_sw_sw.Install(NodeContainer(switches.Get(i), switches.Get(i+nSwitches)));
+        bridgedDevices[i].Add(sw_i_i_plus_n_link.Get(0));
+        bridgedDevices[i+nSwitches].Add(sw_i_i_plus_n_link.Get(1));
+   }
+
+
+   for (int i = 0; i < nSwitches -1; i++) {
+        NetDeviceContainer sw_i_plus_n_i_plus_n1_link = csma_sw_sw.Install(NodeContainer(switches.Get(i + nSwitches), switches.Get(i + nSwitches + 1)));
+        bridgedDevices[i + nSwitches].Add(sw_i_plus_n_i_plus_n1_link.Get(0));
+        bridgedDevices[i + nSwitches + 1].Add(sw_i_plus_n_i_plus_n1_link.Get(1));
    }
 
    NS_LOG_INFO("Creating SimHost-Switch links");
@@ -242,9 +249,19 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    ipv4.Assign (allHostDevices);
 
    NS_LOG_INFO("Bridging Switch Devices");
-   for (int i = 0; i < nSwitches; i++) {
+   for (int i = 0; i < 2*nSwitches; i++) {
         bridgeHelper.Install(switches.Get(i), bridgedDevices[i]);
    }
+
+   if (enable_kronos) {
+	if (initializeExp(1) < 0) {
+		std::cout << "Kronos initialization failed !. Make sure Kronos is loaded ! " << std::endl;
+	}
+   }
+   
+   lxcManager.createConfigFiles();
+   std::cout << "Starting LXCs ... " << std::endl;
+   lxcManager.startLXCs();
 
    NS_LOG_INFO("Setting TapBridges");
    int lxc_counter = 1;
@@ -311,12 +328,12 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    TIMER_NOW (routingStart);
 
    // Calculate routing tables
-   //std::cout << "Populating Routing tables..." << std::endl;
-   //Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+   std::cout << "Populating Routing tables..." << std::endl;
+   Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
 
    
-   Ipv4NixVectorHelper nixRouting;
-   internetv4.SetRoutingHelper (nixRouting); // has effect on the next Install ()
+   //Ipv4NixVectorHelper nixRouting;
+   //internetv4.SetRoutingHelper (nixRouting); // has effect on the next Install ()
    
 
    TIMER_TYPE routingEnd;
@@ -341,7 +358,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
         Simulator::Run ();
 
 	std::cout << "Synchronize and Freeze initiated !" << std::endl;	
-	while(synchronizeAndFreeze(num_lxcs) <= 0) {
+	while(synchronizeAndFreeze(num_lxcs*numTracersperLXC) <= 0) {
 		usleep(1000000);
 	}
 	std::cout << "Synchronize and Freeze Succeeded !" << std::endl;
@@ -369,10 +386,7 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
 
 
    TIMER_NOW (t2);
-   std::cout << "Simulator finished." << std::endl;
-   Simulator::Destroy ();
-   std::cout << "Stopping LXCs ..." << std::endl;
-   lxcManager.stopLXCs();
+   
    double d1 = TIMER_DIFF (t1, t0), d2 = TIMER_DIFF (t2, t1);
    std::cout << "-----" << std::endl << "Runtime Stats:" << std::endl;
    std::cout << "Simulator init time: " << d1 << std::endl;
@@ -382,6 +396,13 @@ NS_LOG_COMPONENT_DEFINE ("SimpleRoutingPing6Example");
    system(("sudo mkdir -p " + logs_base_dir + "/" + log_folder).c_str());
    system(("sudo cp -R /tmp/lxc* " + logs_base_dir + "/" + log_folder).c_str());
    system(("sudo chmod -R 777 " + logs_base_dir).c_str());
+
+   std::cout << "Stopping LXCs ..." << std::endl;
+   lxcManager.stopLXCs();
+
+   std::cout << "Simulator finished." << std::endl;
+   Simulator::Destroy ();
+   
    return 0;
  
 

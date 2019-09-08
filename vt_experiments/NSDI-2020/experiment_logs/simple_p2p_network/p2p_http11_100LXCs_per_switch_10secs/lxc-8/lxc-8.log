@@ -1,0 +1,35 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 8 of etherfile /tmp/arp.txt !
+sudo: unable to resolve host lxc-8: Connection refused
+Listening on 0.0.0.0:9999
+Accepted connection from 10.1.1.58:37816
+Received Hello
+
+Accepted connection from 10.1.1.58:38352
+Received Hello
+
+Accepted connection from 10.1.1.58:38592
+Received Hello
+
+Accepted connection from 10.1.1.58:38832
+Received Hello
+
+Accepted connection from 10.1.1.58:39072
+Received Hello
+
+Accepted connection from 10.1.1.58:39312
+Received Hello
+
+Accepted connection from 10.1.1.58:39552
+Received Hello
+
+Accepted connection from 10.1.1.58:39792
+Received Hello
+
+Accepted connection from 10.1.1.58:40032
+Received Hello
+
+Accepted connection from 10.1.1.58:40272
+Received Hello
+
+TracerID: 0, STOP Command received. Stopping tracer ...

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string> 
+#include <algorithm>
 
 #include "start_lxcs.h"
 
@@ -9,7 +10,7 @@
 using namespace std;
 using namespace lxc_manager;
 
-const string cmd_executor_path = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/cmd_executor";
+const string cmd_executor_path = "sudo /home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/cmd_executor";
 
 //Creates the necessary configuration files for the LXCs
 void LXCManager::createConfigFiles() {
@@ -34,6 +35,7 @@ void LXCManager::createConfigFiles() {
                         } else {
 			    myfile << "lxc.network.ipv4 = " << lxcIPs[i-1] << "/16\n";
 			}
+                        myfile << "lxc.network.hwaddr = 02:00:00:00:" << std::hex << (int)(i / 256) << ":" << (i % 256) << "\n";
 			myfile << "lxc.aa_profile = unconfined\n";
 		        myfile << "lxc.aa_allow_incomplete = 1\n";
 			myfile << "lxc.mount.auto=proc\n";
@@ -41,7 +43,21 @@ void LXCManager::createConfigFiles() {
 			myfile.close();
 		}
 		
+		
 	}
+
+	file_name = "/tmp/arp.txt";
+	ofstream arpfile;
+	arpfile.open(file_name, std::ofstream::out);
+	if (arpfile.is_open()) {
+		for (i = 1; i <= numLxcs; i++) {
+		
+		                arpfile << lxcIPs[i-1] << " 02:00:00:00:" << std::hex << (int)(i / 256) << ":" << (i % 256) << "\n";
+		
+		}
+	}
+	arpfile.close();
+
 	
 	file_name = "/tmp/startup.sh";
 	ofstream startup_file;
@@ -128,7 +144,25 @@ void LXCManager::startLXCs() {
 		ofstream myfile;
 		myfile.open(lxc_log, std::ofstream::out);
 		myfile.close();
-		default_cmd = "lxc-start -n lxc-" + std::to_string(i) + " -L " + lxc_log + " -d -- " + wrapCmd(default_cmd, is_cmd_file);
+		std::string lxc_startup ="/tmp/lxc-" + std::to_string(i) + "/lxc-" + std::to_string(i) + "-startup.sh";
+		myfile.open(lxc_startup, std::ofstream::out);
+		//myfile << "#!/bin/bash\n";
+		myfile << "arp -f /tmp/arp.txt\n";
+		if (!is_cmd_file) {
+			myfile << wrapCmd(default_cmd, is_cmd_file) + "\n";
+		} else {
+			std::ifstream infile(default_cmd);
+			std::string line;
+			while (std::getline(infile, line)) {
+				line.erase(std::remove(line.begin(), line.end(), '\n'), line.end());
+				myfile << wrapCmd(line, false) + "\n";
+			}
+			infile.close();
+		} 
+		myfile.close();
+		system(("chmod +x " + lxc_startup).c_str());
+	
+		default_cmd = "lxc-start -n lxc-" + std::to_string(i) + " -L " + lxc_log + " -d -- " + cmd_executor_path + " -f " + lxc_startup;;
 		std::cout << "Starting Command: " << default_cmd << " inside LXC: " << i << std::endl;
 		system(default_cmd.c_str());
 	}
