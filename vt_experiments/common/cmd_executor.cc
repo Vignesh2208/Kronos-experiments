@@ -49,9 +49,6 @@ int main(int argc, char **argv) {
                 << std::endl;
         exit(0);
     }
-
-    std::cout << "Waiting for 2 secs " << std::endl;
-    usleep(2000000);
        
     startup_cmds_file = input.getCmdOption("-f");
     std::ifstream inputFile;

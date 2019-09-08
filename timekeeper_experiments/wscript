@@ -8,3 +8,9 @@ def build(bld):
     obj = bld.create_ns3_program('timekeeper_simulation', ['csma', 'tap-bridge', 'mobility', 'wifi', 'internet'])
     obj.source = ['timekeeper_simulation.cc', 'start_lxcs.cc', 'TimeKeeper_functions.c', 'utility_functions.c']
     obj.env.append_value("CXXFLAGS", ["-fpermissive"])
+
+
+    obj = bld.create_ns3_program('simple_p2p_network',
+                                 ['csma', 'point-to-point', 'internet', 'nix-vector-routing', 'applications', 'tap-bridge', 'internet', 'bridge', 'applications'])
+    obj.source = ['simple_p2p_network.cc', 'start_lxcs.cc',  'TimeKeeper_functions.c', 'utility_functions.c']
+    obj.env.append_value("CXXFLAGS", ["-fpermissive"])

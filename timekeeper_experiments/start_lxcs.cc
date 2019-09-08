@@ -1,8 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <string> 
+#include <algorithm>
 
 #include "start_lxcs.h"
+
 
 
 #define MAX_BUF 1024
@@ -10,7 +12,7 @@
 using namespace std;
 using namespace lxc_manager;
 
-const string cmd_executor_path = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/cmd_executor";
+const string cmd_executor_path = "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/cmd_executor_tk";
 
 //Creates the necessary configuration files for the LXCs
 void TkLXCManager::createConfigFiles() {
@@ -26,7 +28,12 @@ void TkLXCManager::createConfigFiles() {
 			myfile << "lxc.network.type = veth\n";
 			myfile << "lxc.network.flags = up\n";
 			myfile << "lxc.network.link = br-" << i << "\n";
-			myfile << "lxc.network.ipv4 = 10.0.0." << i << "/24\n";
+			if (lxcIPs.empty()) {
+			    myfile << "lxc.network.ipv4 = 10.0.0." << i << "/24\n";
+                        } else {
+			    myfile << "lxc.network.ipv4 = " << lxcIPs[i-1] << "/16\n";
+			}
+                        myfile << "lxc.network.hwaddr = 02:00:00:00:" << std::hex << (int)(i / 256) << ":" << (i % 256) << "\n";
 			myfile << "lxc.aa_profile = unconfined\n";
 		        myfile << "lxc.aa_allow_incomplete = 1\n";
 			myfile << "lxc.mount.auto=proc\n";
@@ -38,6 +45,19 @@ void TkLXCManager::createConfigFiles() {
 		
 		
 	}
+
+        file_name = "/tmp/arp.txt";
+	ofstream arpfile;
+	arpfile.open(file_name, std::ofstream::out);
+	if (arpfile.is_open()) {
+		for (i = 1; i <= numLxcs; i++) {
+		
+		                arpfile << lxcIPs[i-1] << " 02:00:00:00:" << std::hex << (int)(i / 256) << ":" << (i % 256) << "\n";
+		
+		}
+	}
+	arpfile.close();
+
 	
 	file_name = "/tmp/startup.sh";
 	ofstream startup_file;
@@ -98,9 +118,9 @@ void TkLXCManager::createConfigFiles() {
 	}	
 }
 
-string TkLXCManager::wrapCmd(string origCmdContainer) {
+string TkLXCManager::wrapCmd(string origCmdContainer, string pidLog) {
 	
-	return cmd_executor_path + " -f " + origCmdContainer;
+	return cmd_executor_path + " -f " + origCmdContainer + " -l " + pidLog;
 }
 
 // Starts all of the LXCs
@@ -112,26 +132,53 @@ void TkLXCManager::startLXCs() {
 	system("/tmp/startup.sh");
 	for (i = 1; i <= numLxcs; i++) {
 		string default_cmd = "sleep 10";
+		bool is_cmd_file = false;
 		auto got = this->lxcNumToStartupCmd.find(i);
 		if (got != this->lxcNumToStartupCmd.end()) {
 			default_cmd = got->second;
+			is_cmd_file = true;
 		}
 		
 		std::string lxc_log = "/tmp/lxc-" + std::to_string(i) + "/lxc-" + std::to_string(i) + ".log";
 		ofstream myfile;
 		myfile.open(lxc_log, std::ofstream::out);
 		myfile.close();
-		default_cmd = "lxc-start -n lxc-" + std::to_string(i) + " -L " + lxc_log + " -d -- " + wrapCmd(default_cmd);
+
+		std::string lxc_startup ="/tmp/lxc-" + std::to_string(i) + "/lxc-" + std::to_string(i) + "-startup.sh";
+		std::string pid_log = "/tmp/lxc-" + std::to_string(i) + "/lxc-" + std::to_string(i) + "-pid.log";
+		myfile.open(lxc_startup, std::ofstream::out);
+		myfile << "#!/bin/bash\n";
+		myfile << "arp -f /tmp/arp.txt\n";
+		if (!is_cmd_file) {
+			myfile << default_cmd + "\n";
+		} else {
+			myfile << wrapCmd(default_cmd, pid_log) + "\n";
+		}
+		myfile.close();
+		system(("chmod +x " + lxc_startup).c_str());
+
+
+
+		default_cmd = "lxc-start -n lxc-" + std::to_string(i) + " -L " + lxc_log + " -d -- " + lxc_startup;
 		std::cout << "Starting Command: " << default_cmd << " inside LXC: " << i << std::endl;
 		system(default_cmd.c_str());
 		string lxc_name = "lxc-" + std::to_string(i);
 		int pid = getpidfromname((char *)lxc_name.c_str());
 		std::cout << "LXC-PID: " << pid << std::endl;
-		if (is_virtual) {
-			std::cout << "Dilating LXC: " << lxc_name << " with TDF: " << tdf << std::endl;
-			dilate_all(pid, tdf);
-			addToExp(pid, -1);
+		usleep(1000000);
+		std::ifstream infile(pid_log);
+		std::string line;
+		while (std::getline(infile, line)) {
+			int child_pid = std::stoi(line);
+			if (child_pid > 1 && is_virtual) {
+				std::cout << "Dilating Child: " << child_pid << " of LXC: " << lxc_name << " with TDF: " << tdf << std::endl;
+				dilate_all(child_pid, tdf);
+				addToExp(child_pid, -1);
+			} else if (child_pid > 1) {
+				std::cout << "Child: " << child_pid << " belongs to LXC: " << lxc_name << std::endl;
+			}
 		}
+		infile.close();
 	}
 }
 

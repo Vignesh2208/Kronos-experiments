@@ -12,6 +12,7 @@
 #include <readline/readline.h>
 
 #include <iostream>
+#include <vector>
 #include <unordered_map>
 
 extern "C"
@@ -34,6 +35,7 @@ namespace lxc_manager {
 			float tdf = 1.0;
 			std::unordered_map<int, std::string> lxcNumToStartupCmd;
 		public:
+                std::vector<std::string> lxcIPs;
 		TkLXCManager(int num_lxcs, string startup_cmds_dir, bool is_virtual,
 			   long timeslice, float tdf) :
 			numLxcs(num_lxcs), startupCmdsDir(startup_cmds_dir),
@@ -42,7 +44,7 @@ namespace lxc_manager {
 		void createConfigFiles();
 		void startLXCs();
 		void stopLXCs();
-		string wrapCmd(string origCmd);
+		string wrapCmd(string origCmd, string logFile);
 
 	};
 

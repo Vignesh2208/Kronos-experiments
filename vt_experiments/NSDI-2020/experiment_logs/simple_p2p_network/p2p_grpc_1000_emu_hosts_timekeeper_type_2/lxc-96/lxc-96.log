@@ -1,0 +1,89 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 96 of etherfile /tmp/arp.txt !
+Logging all child pids ... 
+Waiting for all child processes to finish ... 
+Waiting for trigger file ... 
+Starting Process: /home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.41 50051 100 100
+Waiting for 1 sec for server to start ...
+14: Connect Failed
+Time elapsed for request completion: 0.000537 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000478 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000105 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.00011 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.00014 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000121 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 8.3e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 9.5e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 8e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000101 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000206 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 7.2e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 2.9e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 3.9e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 8.2e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 2.9e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 3.7e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.0005 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000114 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000101 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 9.5e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 2.3e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 1.2e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 9.4e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: -7e-06 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.00018 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 9.2e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 7.9e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 8.3e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000579 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 7e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000597 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000604 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000112 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 3.3e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 4.1e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000453 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 3.1e-05 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000139 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000455 Server = 10.1.1.41, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.000131 Server = 10.1.1.41, Port = 50051
