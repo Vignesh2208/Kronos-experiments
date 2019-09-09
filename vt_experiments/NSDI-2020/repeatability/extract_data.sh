@@ -8,9 +8,11 @@ for val in ${StringArray[@]}; do
 	   SubDir=$DIR/results/kronos/$val/$num_process
 	   echo 'Processing: ' $SubDir 
 	   grep -nr "Mu Elapsed time" $SubDir/* | awk '{print $5'} > $DIR/results/kronos/$val-$num_process.txt
+	   grep -nr "overhead ratio:" $SubDir/* | awk '{print $3}' > $DIR/results/kronos/$val-$num_process-overhead_ratio.txt
 
 	   SubDir=$DIR/results/timekeeper/$val/$num_process
 	   echo 'Processing: ' $SubDir 
 	   grep -nr "Mu Elapsed time" $SubDir/* | awk '{print $5'} > $DIR/results/timekeeper/$val-$num_process.txt
+	   grep -nr "overhead ratio:" $SubDir/* | awk '{print $3}' > $DIR/results/timekeeper/$val-$num_process-overhead_ratio.txt
     done
 done

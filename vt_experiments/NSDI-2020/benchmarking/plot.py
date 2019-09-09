@@ -83,18 +83,21 @@ fig.update_layout(
         )
     ),
     legend=go.layout.Legend(
+	x = -0.05,
+        y = 1.1,
         font=dict(
             family="sans-serif",
             size=20,
             color="black"
         ),
-        bgcolor="White",
-        bordercolor="Black",
-        borderwidth=5
+        #bgcolor="White",
+        #bordercolor="Black",
+        #borderwidth=5
     )
     
 )
 fig.update_layout(xaxis_type="log")
+fig.update_layout(legend_orientation="h")
 
 fig.update_xaxes(title_font=dict(size=20, family='Courier'), tickfont=dict(family='Courier', size=20), nticks=5)
 fig.update_yaxes(title_font=dict(size=20, family='Courier'), tickfont=dict(family='Courier', size=20))
