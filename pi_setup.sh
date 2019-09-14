@@ -3,7 +3,7 @@
 
 git clone --single-branch --branch pi_scripts https://github.com/gopchandani/qos_synthesis /home/pi
 
-ETH0_MAC=$(cat /sys/class/net/vmnet8/address)
+ETH0_MAC=$(cat /sys/class/net/eth0/address)
 echo 'ETH0 MAC = ' $ETH0_MAC
 ETH0_STATIC_IP=$(grep -nr $ETH0_MAC $HOME/qos_synthesis/arp_table_fix.sh | awk '{print $3}')
 echo 'ETH0 STATIC IP = ' $ETH0_STATIC_IP
