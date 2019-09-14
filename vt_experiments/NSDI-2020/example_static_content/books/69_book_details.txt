@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/18490.Frankenstein', u'vote_count': u'298', u'score': u'26,096', u'author': u'Mary Shelley', u'title': u'Frankenstein'}

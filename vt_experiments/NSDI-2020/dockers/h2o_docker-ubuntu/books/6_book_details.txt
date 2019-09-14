@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/18131.A_Wrinkle_in_Time', u'vote_count': u'624', u'score': u'157,800', u'author': u"Madeleine L'Engle", u'title': u'A Wrinkle in Time (A Wrinkle in Time Quintet, #1)'}

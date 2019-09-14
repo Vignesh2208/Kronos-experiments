@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/18512.The_Return_of_the_King', u'vote_count': u'161', u'score': u'13,762', u'author': u'J.R.R. Tolkien', u'title': u'The Return of the King (The Lord of the Rings, #3)'}

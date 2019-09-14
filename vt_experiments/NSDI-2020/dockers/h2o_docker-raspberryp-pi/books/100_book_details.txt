@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/218467.Lucifer_s_Hammer', u'vote_count': u'160', u'score': u'13,587', u'author': u'Larry Niven', u'title': u"Lucifer's Hammer"}

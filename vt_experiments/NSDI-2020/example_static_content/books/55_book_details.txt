@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/8908.World_War_Z', u'vote_count': u'348', u'score': u'31,771', u'author': u'Max Brooks', u'title': u'World War Z: An Oral History of the Zombie War'}

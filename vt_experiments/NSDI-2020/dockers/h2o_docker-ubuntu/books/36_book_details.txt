@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/16690.The_Moon_is_a_Harsh_Mistress', u'vote_count': u'567', u'score': u'52,268', u'author': u'Robert A. Heinlein', u'title': u'The Moon is a Harsh Mistress'}

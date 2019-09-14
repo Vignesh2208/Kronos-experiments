@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan', u'vote_count': u'293', u'score': u'26,261', u'author': u'Kurt Vonnegut', u'title': u'The Sirens of Titan'}

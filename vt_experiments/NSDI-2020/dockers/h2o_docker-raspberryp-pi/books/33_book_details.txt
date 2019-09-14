@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/135479.Cat_s_Cradle', u'vote_count': u'598', u'score': u'55,445', u'author': u'Kurt Vonnegut', u'title': u"Cat's Cradle"}

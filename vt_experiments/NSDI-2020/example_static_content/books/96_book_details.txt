@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/234501.Startide_Rising', u'vote_count': u'169', u'score': u'14,319', u'author': u'David Brin', u'title': u'Startide Rising (The Uplift Saga, #2)'}

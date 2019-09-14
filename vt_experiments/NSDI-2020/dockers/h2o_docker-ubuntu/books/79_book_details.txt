@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/14817.A_Scanner_Darkly', u'vote_count': u'241', u'score': u'20,559', u'author': u'Philip K. Dick', u'title': u'A Scanner Darkly'}

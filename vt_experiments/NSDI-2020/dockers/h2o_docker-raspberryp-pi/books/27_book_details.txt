@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/17214.Starship_Troopers', u'vote_count': u'812', u'score': u'76,031', u'author': u'Robert A. Heinlein', u'title': u'Starship Troopers'}

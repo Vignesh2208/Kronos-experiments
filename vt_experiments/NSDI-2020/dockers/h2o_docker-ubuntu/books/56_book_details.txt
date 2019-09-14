@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/216363.The_Man_in_the_High_Castle', u'vote_count': u'351', u'score': u'31,212', u'author': u'Philip K. Dick', u'title': u'The Man in the High Castle'}

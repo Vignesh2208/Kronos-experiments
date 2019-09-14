@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/149267.The_Stand', u'vote_count': u'948', u'score': u'90,408', u'author': u'Stephen King', u'title': u'The Stand'}

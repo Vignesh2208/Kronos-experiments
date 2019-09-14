@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/4981.Slaughterhouse_Five', u'vote_count': u'284', u'score': u'122,856', u'author': u'Kurt Vonnegut', u'title': u'Slaughterhouse-Five'}

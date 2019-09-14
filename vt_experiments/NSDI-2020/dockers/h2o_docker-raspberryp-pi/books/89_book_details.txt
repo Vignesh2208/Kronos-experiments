@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/40445.Altered_Carbon', u'vote_count': u'205', u'score': u'18,049', u'author': u'Richard K. Morgan', u'title': u'Altered Carbon (Takeshi Kovacs, #1)'}

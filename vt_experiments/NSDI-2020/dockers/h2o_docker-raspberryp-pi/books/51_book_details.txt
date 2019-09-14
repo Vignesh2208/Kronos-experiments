@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/334176.The_Sparrow', u'vote_count': u'359', u'score': u'34,134', u'author': u'Mary Doria Russell', u'title': u'The Sparrow (The Sparrow, #1)'}

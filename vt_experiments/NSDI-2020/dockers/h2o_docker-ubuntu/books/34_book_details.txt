@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/414999.Childhood_s_End', u'vote_count': u'580', u'score': u'53,083', u'author': u'Arthur C. Clarke', u'title': u"Childhood's End"}

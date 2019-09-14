@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/3636.The_Giver', u'vote_count': u'283', u'score': u'124,417', u'author': u'Lois Lowry', u'title': u'The Giver (The Giver, #1)'}

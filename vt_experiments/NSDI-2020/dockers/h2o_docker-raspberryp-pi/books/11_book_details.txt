@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/350.Stranger_in_a_Strange_Land', u'vote_count': u'255', u'score': u'120,620', u'author': u'Robert A. Heinlein', u'title': u'Stranger in a Strange Land'}

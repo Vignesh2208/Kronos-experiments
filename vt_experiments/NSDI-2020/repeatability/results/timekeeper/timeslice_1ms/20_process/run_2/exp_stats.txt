@@ -1,3 +1,0 @@
-overhead ratio: 5.029510
-total_elapsed_virtual_time: 1.000000
-elapsed_time: 5.029510

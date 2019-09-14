@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/5470.1984', u'vote_count': u'241', u'score': u'316,325', u'author': u'George Orwell', u'title': u'1984'}

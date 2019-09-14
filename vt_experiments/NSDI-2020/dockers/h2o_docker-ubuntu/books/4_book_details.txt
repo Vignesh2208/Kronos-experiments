@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/17470674-fahrenheit-451', u'vote_count': u'362', u'score': u'228,842', u'author': u'Ray Bradbury', u'title': u'Fahrenheit 451'}

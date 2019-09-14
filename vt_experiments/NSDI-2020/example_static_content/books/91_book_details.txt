@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/60211.The_Shadow_of_the_Torturer', u'vote_count': u'185', u'score': u'16,345', u'author': u'Gene Wolfe', u'title': u'The Shadow of the Torturer (The Book of the New Sun #1)'}

@@ -1,1 +1,0 @@
-/home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_server 50051

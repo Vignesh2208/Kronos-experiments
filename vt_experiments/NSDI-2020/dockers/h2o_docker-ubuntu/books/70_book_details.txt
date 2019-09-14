@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/95558.Solaris', u'vote_count': u'287', u'score': u'26,026', u'author': u'Stanis\u0142aw Lem', u'title': u'Solaris'}

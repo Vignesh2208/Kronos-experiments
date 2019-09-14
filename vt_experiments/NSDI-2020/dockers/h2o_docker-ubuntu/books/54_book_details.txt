@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/7670.The_Andromeda_Strain', u'vote_count': u'367', u'score': u'31,913', u'author': u'Michael Crichton', u'title': u'The Andromeda Strain'}

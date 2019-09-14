@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/61905.Barrayar', u'vote_count': u'188', u'score': u'16,747', u'author': u'Lois McMaster Bujold', u'title': u'Barrayar (Vorkosigan Saga, #7)'}

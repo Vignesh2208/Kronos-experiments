@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/9532.Ender_s_Shadow', u'vote_count': u'652', u'score': u'60,877', u'author': u'Orson Scott Card', u'title': u"Ender's Shadow (Ender's Shadow, #1)"}
