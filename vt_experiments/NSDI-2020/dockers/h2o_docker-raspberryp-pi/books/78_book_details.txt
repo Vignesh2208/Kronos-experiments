@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/29581.Foundation_and_Empire', u'vote_count': u'259', u'score': u'21,750', u'author': u'Isaac Asimov', u'title': u'Foundation and Empire (Foundation, #2)'}

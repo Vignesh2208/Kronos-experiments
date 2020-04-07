@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/60931.Kindred', u'vote_count': u'169', u'score': u'14,866', u'author': u'Octavia E. Butler', u'title': u'Kindred'}

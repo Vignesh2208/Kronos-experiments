@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/112537.Rendezvous_with_Rama', u'vote_count': u'544', u'score': u'49,582', u'author': u'Arthur C. Clarke', u'title': u'Rendezvous with Rama (Rama, #1)'}

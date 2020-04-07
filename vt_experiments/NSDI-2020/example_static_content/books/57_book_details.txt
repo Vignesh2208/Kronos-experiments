@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/100365.The_Mote_in_God_s_Eye', u'vote_count': u'353', u'score': u'31,208', u'author': u'Larry Niven', u'title': u"The Mote in God's Eye"}

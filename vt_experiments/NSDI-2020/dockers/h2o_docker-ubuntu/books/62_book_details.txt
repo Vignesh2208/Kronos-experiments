@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/46756.Oryx_and_Crake', u'vote_count': u'297', u'score': u'27,415', u'author': u'Margaret Atwood', u'title': u'Oryx and Crake (MaddAddam, #1)'}

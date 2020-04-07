@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/164154.A_Canticle_for_Leibowitz', u'vote_count': u'547', u'score': u'50,712', u'author': u'Walter M. Miller Jr.', u'title': u'A Canticle for Leibowitz'}

@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale', u'vote_count': u'893', u'score': u'84,060', u'author': u'Margaret Atwood', u'title': u"The Handmaid's Tale"}

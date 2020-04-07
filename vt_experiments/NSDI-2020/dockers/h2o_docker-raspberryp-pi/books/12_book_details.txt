@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/7082.Do_Androids_Dream_of_Electric_Sheep_', u'vote_count': u'227', u'score': u'116,835', u'author': u'Philip K. Dick', u'title': u'Do Androids Dream of Electric Sheep?'}

@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/7613.Animal_Farm', u'vote_count': u'982', u'score': u'91,093', u'author': u'George Orwell', u'title': u'Animal Farm'}

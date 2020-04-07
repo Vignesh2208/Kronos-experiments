@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/8909.The_War_of_the_Worlds', u'vote_count': u'679', u'score': u'62,328', u'author': u'H.G. Wells', u'title': u'The War of the Worlds'}

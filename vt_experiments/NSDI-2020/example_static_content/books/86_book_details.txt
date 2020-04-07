@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/77773.To_Say_Nothing_of_the_Dog', u'vote_count': u'214', u'score': u'19,281', u'author': u'Connie Willis', u'title': u'To Say Nothing of the Dog (Oxford Time Travel, #2)'}

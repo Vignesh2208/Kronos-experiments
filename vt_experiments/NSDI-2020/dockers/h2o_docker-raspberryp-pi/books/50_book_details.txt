@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/186074.The_Name_of_the_Wind', u'vote_count': u'372', u'score': u'35,472', u'author': u'Patrick Rothfuss', u'title': u'The Name of the Wind (The Kingkiller Chronicle, #1)'}

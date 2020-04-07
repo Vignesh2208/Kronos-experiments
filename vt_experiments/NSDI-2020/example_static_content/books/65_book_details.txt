@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/77507.Red_Mars', u'vote_count': u'298', u'score': u'26,658', u'author': u'Kim Stanley Robinson', u'title': u'Red Mars (Mars Trilogy, #1)'}

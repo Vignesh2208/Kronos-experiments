@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/61975.Dragonflight', u'vote_count': u'468', u'score': u'43,309', u'author': u'Anne McCaffrey', u'title': u'Dragonflight (Dragonriders of Pern, #1)'}

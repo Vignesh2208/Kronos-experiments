@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings', u'vote_count': u'565', u'score': u'52,453', u'author': u'J.R.R. Tolkien', u'title': u'The Lord of the Rings (The Lord of the Rings, #1-3)'}

@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/70535.2001', u'vote_count': u'837', u'score': u'77,727', u'author': u'Arthur C. Clarke', u'title': u'2001: A Space Odyssey (Space Odyssey, #1)'}

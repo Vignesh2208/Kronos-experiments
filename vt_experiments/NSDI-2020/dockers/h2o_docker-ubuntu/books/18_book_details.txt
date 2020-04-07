@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/77566.Hyperion', u'vote_count': u'977', u'score': u'93,403', u'author': u'Dan Simmons', u'title': u'Hyperion (Hyperion Cantos, #1)'}

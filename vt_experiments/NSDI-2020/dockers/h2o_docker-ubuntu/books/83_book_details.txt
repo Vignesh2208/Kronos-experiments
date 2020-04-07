@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/4407.American_Gods', u'vote_count': u'222', u'score': u'19,589', u'author': u'Neil Gaiman', u'title': u'American Gods'}

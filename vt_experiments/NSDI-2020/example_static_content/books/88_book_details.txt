@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/30628.Out_of_the_Silent_Planet_Perelandra_That_Hideous_Strength', u'vote_count': u'199', u'score': u'18,143', u'author': u'C.S. Lewis', u'title': u'Out of the Silent Planet / Perelandra / That Hideous Strength (Space Trilogy, #1-3)'}

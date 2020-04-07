@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/375802.Ender_s_Game', u'vote_count': u'247', u'score': u'519,567', u'author': u'Orson Scott Card', u'title': u"Ender's Game (The Ender Quintet, #1)"}

@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/189147.To_Your_Scattered_Bodies_Go', u'vote_count': u'181', u'score': u'15,386', u'author': u'Philip Jos\xe9 Farmer', u'title': u'To Your Scattered Bodies Go (Riverworld, #1)'}

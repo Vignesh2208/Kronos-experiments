@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/41804.I_Robot', u'vote_count': u'124', u'score': u'106,113', u'author': u'Isaac Asimov', u'title': u'I, Robot (Robot, #0.1)'}

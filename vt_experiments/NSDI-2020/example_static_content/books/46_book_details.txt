@@ -1,1 +1,0 @@
-{u'url': u'https://www.goodreads.com/book/show/33507.Twenty_Thousand_Leagues_Under_the_Sea', u'vote_count': u'455', u'score': u'40,740', u'author': u'Jules Verne', u'title': u'Twenty Thousand Leagues Under the Sea (Extraordinary Voyages, #6)'}
