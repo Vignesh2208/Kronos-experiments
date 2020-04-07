@@ -1,0 +1,13 @@
+Running:  ['']
+Traceback (most recent call last):
+  File "example_tk_experiment.py", line 144, in <module>
+    main()
+  File "example_tk_experiment.py", line 91, in main
+    pid = start_new_dilated_process(cmds_to_run[i], log_fds[i], args.tdf)
+  File "example_tk_experiment.py", line 17, in start_new_dilated_process
+    os.execvp(args[0], args)
+  File "/usr/lib/python2.7/os.py", line 346, in execvp
+    _execvpe(file, args)
+  File "/usr/lib/python2.7/os.py", line 382, in _execvpe
+    func(fullname, *argrest)
+OSError: [Errno 13] Permission denied

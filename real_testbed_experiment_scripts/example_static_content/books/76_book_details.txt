@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/17184.The_Invisible_Man', u'vote_count': u'264', u'score': u'22,581', u'author': u'H.G. Wells', u'title': u'The Invisible Man'}

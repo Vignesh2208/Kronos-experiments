@@ -1,0 +1,31 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 96 of etherfile /tmp/arp.txt !
+Logging all child pids ... 
+Waiting for trigger file ... 
+Waiting for all child processes to finish ... 
+Starting Process: /home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.67 50051 100 100
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 0.029457 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.305242 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.214731 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.156554 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.513302 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.109865 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.108992 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.095305 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.195364 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.012958 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.648049 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.50755 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.240568 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.137397 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.00088 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.23554 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.10202 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.310223 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.514618 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.172311 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.001143 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.052094 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.000878 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.492806 Server = 10.1.1.67, Port = 50051

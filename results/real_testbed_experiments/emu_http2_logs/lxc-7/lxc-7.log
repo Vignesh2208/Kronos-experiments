@@ -1,0 +1,610 @@
+sudo: unable to resolve host lxc-7: Connection refused
+Waiting for all child processes to finish ... 
+Starting Process: arp -f /tmp/arp.txt
+Starting Process: sudo tracer -r 0.180000 -n 10000 -c "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/client_http2 10.1.1.5 100 100"
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 7 of etherfile /tmp/arp.txt !
+sudo: unable to resolve host lxc-7: Connection refused
+Waiting for 1 sec for server to start ...
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.04932
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.04322
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.03235
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.03009
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02594
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02128
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.03259
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.03092
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02571
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02567
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02604
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02618
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02593
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02574
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02577
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02564
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02552
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02559
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02583
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02555
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02564
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.0258
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02633
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02588
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02579
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.0262
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02607
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02581
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02592
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02586
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02599
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02588
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02618
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02583
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02978
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02585
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02643
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02607
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02872
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02589
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02632
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02621
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02889
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02581
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02606
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02586
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02641
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02985
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02579
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02598
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02632
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02574
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02941
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02578
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02588
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.0256
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02604
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02599
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02658
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02608
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02909
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02595
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02632
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02574
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02592
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02985
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02593
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02593
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02624
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02589
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02663
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.0294
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02579
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02615
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02585
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02556
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02564
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02576
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.03083
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02596
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.03195
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02595
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02563
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.0261
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.0297
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02584
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02576
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02604
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02892
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02597
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02593
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02572
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02577
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02951
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02563
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02597
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02585
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02593
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02921
+Connecting to server ...
+Finishing Main request !
+Exiting ! 
+Finishing session after |num| requests are done !
+Exiting !
+Time elapsed for request completion: 0.02579
+TracerID: 0, STOP Command received. Stopping tracer ...
+All child processes exited ! 

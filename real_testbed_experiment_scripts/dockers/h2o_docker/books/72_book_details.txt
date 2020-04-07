@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/24830.The_Illustrated_Man', u'vote_count': u'289', u'score': u'24,566', u'author': u'Ray Bradbury', u'title': u'The Illustrated Man'}

@@ -1,0 +1,16 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 41 of etherfile /tmp/arp.txt !
+Logging all child pids ... 
+Waiting for trigger file ... 
+Waiting for all child processes to finish ... 
+Starting Process: /home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.67 50051 100 100
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 1.56032 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.600638 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.68392 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.184785 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.330414 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.747193 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.957266 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.663882 Server = 10.1.1.67, Port = 50051
+Time elapsed for request completion: 0.411567 Server = 10.1.1.67, Port = 50051

@@ -1,0 +1,9 @@
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 15
+
+Doing CPU performance benchmark
+
+Threads started!
+TracerID: 0, STOP Command received. Stopping tracer ...

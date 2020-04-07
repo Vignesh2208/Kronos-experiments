@@ -1,0 +1,110 @@
+sudo: unable to resolve host lxc-8: Connection refused
+Waiting for all child processes to finish ... 
+Starting Process: arp -f /tmp/arp.txt
+Starting Process: sudo tracer -r 0.180000 -n 10000 -c "/home/kronos/ns-allinone-3.29/ns-3.29/examples/vt_experiments/common/client_http11_timeout 10.1.1.9 100 100 10"
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 8 of etherfile /tmp/arp.txt !
+sudo: unable to resolve host lxc-8: Connection refused
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 0.16675
+Time elapsed for request completion: 0.16824
+Time elapsed for request completion: 0.16962
+Time elapsed for request completion: 0.1703
+Time elapsed for request completion: 0.17147
+Time elapsed for request completion: 0.1693
+Time elapsed for request completion: 0.17343
+Time elapsed for request completion: 0.16298
+Time elapsed for request completion: 0.17175
+Time elapsed for request completion: 0.16782
+Time elapsed for request completion: 0.16734
+Time elapsed for request completion: 0.17078
+Time elapsed for request completion: 0.17397
+Time elapsed for request completion: 0.17295
+Time elapsed for request completion: 0.17211
+Time elapsed for request completion: 0.167
+Time elapsed for request completion: 0.17657
+Time elapsed for request completion: 0.16797
+Time elapsed for request completion: 0.17029
+Time elapsed for request completion: 0.16728
+Time elapsed for request completion: 0.17333
+Time elapsed for request completion: 0.17076
+Time elapsed for request completion: 0.16708
+Time elapsed for request completion: 0.16956
+Time elapsed for request completion: 0.17074
+Time elapsed for request completion: 0.16819
+Time elapsed for request completion: 0.16361
+Time elapsed for request completion: 0.16785
+Time elapsed for request completion: 0.16485
+Time elapsed for request completion: 0.16629
+Time elapsed for request completion: 0.16522
+Time elapsed for request completion: 0.1668
+Time elapsed for request completion: 0.16507
+Time elapsed for request completion: 0.16025
+Time elapsed for request completion: 0.16917
+Time elapsed for request completion: 0.17073
+Time elapsed for request completion: 0.16552
+Time elapsed for request completion: 0.16183
+Time elapsed for request completion: 0.16606
+Time elapsed for request completion: 0.16767
+Time elapsed for request completion: 0.16871
+Time elapsed for request completion: 0.16741
+Time elapsed for request completion: 0.16543
+Time elapsed for request completion: 0.16615
+Time elapsed for request completion: 0.16524
+Time elapsed for request completion: 0.16378
+Time elapsed for request completion: 0.16309
+Time elapsed for request completion: 0.1694
+Time elapsed for request completion: 0.16603
+Time elapsed for request completion: 0.16389
+Time elapsed for request completion: 0.16731
+Time elapsed for request completion: 0.1653
+Time elapsed for request completion: 0.17033
+Time elapsed for request completion: 0.16235
+Time elapsed for request completion: 0.16693
+Time elapsed for request completion: 0.16682
+Time elapsed for request completion: 0.16477
+Time elapsed for request completion: 0.16034
+Time elapsed for request completion: 0.16356
+Time elapsed for request completion: 0.16802
+Time elapsed for request completion: 0.16929
+Time elapsed for request completion: 0.16484
+Time elapsed for request completion: 0.16346
+Time elapsed for request completion: 0.17137
+Time elapsed for request completion: 0.17299
+Time elapsed for request completion: 0.16689
+Time elapsed for request completion: 0.16323
+Time elapsed for request completion: 0.16161
+Time elapsed for request completion: 0.16803
+Time elapsed for request completion: 0.16409
+Time elapsed for request completion: 0.16874
+Time elapsed for request completion: 0.17492
+Time elapsed for request completion: 0.16671
+Time elapsed for request completion: 0.16506
+Time elapsed for request completion: 0.1655
+Time elapsed for request completion: 0.16557
+Time elapsed for request completion: 0.16375
+Time elapsed for request completion: 0.17251
+Time elapsed for request completion: 0.1618
+Time elapsed for request completion: 0.16682
+Time elapsed for request completion: 0.16308
+Time elapsed for request completion: 0.17162
+Time elapsed for request completion: 0.16463
+Time elapsed for request completion: 0.16224
+Time elapsed for request completion: 0.16473
+Time elapsed for request completion: 0.16434
+Time elapsed for request completion: 0.16151
+Time elapsed for request completion: 0.16307
+Time elapsed for request completion: 0.16345
+Time elapsed for request completion: 0.16732
+Time elapsed for request completion: 0.16359
+Time elapsed for request completion: 0.16842
+Time elapsed for request completion: 0.16375
+Time elapsed for request completion: 0.16144
+Time elapsed for request completion: 0.16477
+Time elapsed for request completion: 0.16427
+Time elapsed for request completion: 0.16386
+Time elapsed for request completion: 0.17223
+Time elapsed for request completion: 0.16616
+Time elapsed for request completion: 0.16727
+TracerID: 0, STOP Command received. Stopping tracer ...
+All child processes exited ! 

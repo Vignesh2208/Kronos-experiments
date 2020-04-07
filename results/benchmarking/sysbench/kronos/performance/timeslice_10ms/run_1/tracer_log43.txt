@@ -1,0 +1,30 @@
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 1000
+
+
+Test execution summary:
+    total time:                          0.3200s
+    total number of events:              10000
+    total time taken by event execution: 0.3199
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.03ms
+         max:                                 10.00ms
+         approx.  95 percentile:               9.90ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   0.3199/0.00
+
+Ignoring PID: 13847
+Ignoring PID: 13892
+TracerID: 0, STOP Command received. Stopping tracer ...

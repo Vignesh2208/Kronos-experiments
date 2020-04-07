@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone', u'vote_count': u'452', u'score': u'41,699', u'author': u'J.K. Rowling', u'title': u"Harry Potter and the Sorcerer's Stone (Harry Potter, #1)"}

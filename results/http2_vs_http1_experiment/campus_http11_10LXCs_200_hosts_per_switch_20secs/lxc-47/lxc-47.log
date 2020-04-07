@@ -1,0 +1,31 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 47 of etherfile /tmp/arp.txt !
+sudo: unable to resolve host lxc-47: Connection refused
+Waiting for 1 sec for server to start ...
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection timed out
+Boost connect error: Connection reset by peer
+Boost connect error: Connection reset by peer
+Boost connect error: Operation canceled
+Time elapsed for request completion: 2.98464
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Boost connect error: Connection reset by peer
+Boost connect error: Operation canceled
+Time elapsed for request completion: 3.54455
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Time elapsed for request completion: 7.11474
+Boost connect error: Operation canceled
+Boost connect error: Operation canceled
+Time elapsed for request completion: 3.20155
+TracerID: 0, STOP Command received. Stopping tracer ...

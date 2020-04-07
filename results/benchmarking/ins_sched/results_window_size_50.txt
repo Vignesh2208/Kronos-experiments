@@ -1,0 +1,49 @@
+My Pid: 16279
+Starting Command: /home/vignesh/Kronos/src/tracer/tests/benchmarking/test
+My Pid: 16279
+Starting Command: /home/vignesh/Kronos/src/tracer/tests/benchmarking/test
+My Pid: 16279
+Starting Command: /home/vignesh/Kronos/src/tracer/tests/benchmarking/test
+Waiting for Child : 16281
+Child stopped. Setting trace options 
+Waiting for Child : 16282
+Child stopped. Setting trace options 
+TEST SUCCESS.
+N-Insns: 1000
+Avg overshoot_err: 27.555000
+Std overshoot_err: 4.902753
+Avg time_elapsed_window: 19.754999
+Std time_elapsed_window: 44.567420
+Avg time_elapsed_nowindow: 9.300000
+Std time_elapsed_nowindow: 15.280052
+N-Insns: 10000
+Avg overshoot_err: 27.379999
+Std overshoot_err: 5.239812
+Avg time_elapsed_window: 19.285000
+Std time_elapsed_window: 15.070625
+Avg time_elapsed_nowindow: 10.640000
+Std time_elapsed_nowindow: 10.190701
+N-Insns: 100000
+Avg overshoot_err: 27.195000
+Std overshoot_err: 5.026632
+Avg time_elapsed_window: 37.855000
+Std time_elapsed_window: 30.678560
+Avg time_elapsed_nowindow: 29.315001
+Std time_elapsed_nowindow: 29.708849
+N-Insns: 1000000
+Avg overshoot_err: 27.690001
+Std overshoot_err: 4.933951
+Avg time_elapsed_window: 213.274994
+Std time_elapsed_window: 46.849451
+Avg time_elapsed_nowindow: 204.764999
+Std time_elapsed_nowindow: 43.546760
+N-Insns: 10000000
+Avg overshoot_err: 27.920000
+Std overshoot_err: 5.025296
+Avg time_elapsed_window: 1969.675049
+Std time_elapsed_window: 107.110924
+Avg time_elapsed_nowindow: 1953.204956
+Std time_elapsed_nowindow: 84.870490
+Cleaning up PID: 16281
+Cleaning up PID: 16282
+Cleaning up Hashmaps and LinkedLists !

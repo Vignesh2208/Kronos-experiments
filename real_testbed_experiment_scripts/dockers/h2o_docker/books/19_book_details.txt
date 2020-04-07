@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/76778.The_Martian_Chronicles', u'vote_count': u'977', u'score': u'92,164', u'author': u'Ray Bradbury', u'title': u'The Martian Chronicles'}

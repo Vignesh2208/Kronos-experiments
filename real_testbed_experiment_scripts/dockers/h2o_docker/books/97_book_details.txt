@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/13821.Lord_of_Light', u'vote_count': u'162', u'score': u'13,771', u'author': u'Roger Zelazny', u'title': u'Lord of Light'}

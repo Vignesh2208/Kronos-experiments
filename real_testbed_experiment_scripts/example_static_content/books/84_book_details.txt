@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/59924.The_Lathe_of_Heaven', u'vote_count': u'225', u'score': u'19,450', u'author': u'Ursula K. Le Guin', u'title': u'The Lathe of Heaven'}

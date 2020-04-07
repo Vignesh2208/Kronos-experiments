@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/2493.The_Time_Machine', u'vote_count': u'829', u'score': u'76,931', u'author': u'H.G. Wells', u'title': u'The Time Machine'}

@@ -1,0 +1,36 @@
+DebugLevel	1
+IpVersion	4
+
+LockFile "/tmp/lxc-@NODEID@/olsrd.lock"
+
+# Clear the screen each time the internal state changes
+
+ClearScreen     yes
+
+LinkQualityAging 0.2
+
+Interface "eth0"
+{
+ HelloInterval 1.0
+ HelloValidityTime 1.0
+}
+
+LoadPlugin "olsrd_txtinfo.so.0.1"
+{
+PlParam "accept" "0.0.0.0"
+}
+
+LoadPlugin "olsrd_bmf.so.1.7.0"
+{
+PlParam "DoLocalBroadcast" "no"
+
+PlParam "CapturePacketsOnOlsrInterfaces" "no"
+
+PlParam "BmfMechanism" "Broadcast"
+    
+PlParam "NonOlsrIf" "eth3"
+    
+PlParam "FanOutLimit" "0"
+    
+PlParam "BroadcastRetransmitCount" "1"
+}

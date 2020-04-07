@@ -1,0 +1,28 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 46 of etherfile /tmp/arp.txt !
+Logging all child pids ... 
+Waiting for trigger file ... 
+Waiting for all child processes to finish ... 
+Starting Process: /home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.1 50051 100 100
+Waiting for 1 sec for server to start ...
+Time elapsed for request completion: 0.011948 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.364897 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.39915 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.203532 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.147258 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.396716 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.168144 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.270993 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.135552 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.06129 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.824278 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.251977 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.115847 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.125674 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.347002 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.448287 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.014783 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.396167 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.130854 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.456086 Server = 10.1.1.1, Port = 50051
+Time elapsed for request completion: 0.149003 Server = 10.1.1.1, Port = 50051

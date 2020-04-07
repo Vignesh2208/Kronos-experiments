@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/2845024-anathem', u'vote_count': u'221', u'score': u'20,070', u'author': u'Neal Stephenson', u'title': u'Anathem'}

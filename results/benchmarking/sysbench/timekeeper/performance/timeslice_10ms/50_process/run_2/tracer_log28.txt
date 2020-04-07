@@ -1,0 +1,30 @@
+Running:  ['sysbench', '--test=cpu', '--cpu-max-prime=1000', 'run']
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+WARNING: Operation time (18446744073709539328.000000) is greater than maximal counted value, counting as 10000000000000.000000
+WARNING: Percentile statistics will be inaccurate
+Done.
+
+Maximum prime number checked in CPU test: 1000
+
+
+Test execution summary:
+    total time:                          0.3139s
+    total number of events:              10000
+    total time taken by event execution: 0.3339
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.03ms
+         max:                            18446744073709.55ms
+         approx.  95 percentile:         9997007.06ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   0.3339/0.00
+

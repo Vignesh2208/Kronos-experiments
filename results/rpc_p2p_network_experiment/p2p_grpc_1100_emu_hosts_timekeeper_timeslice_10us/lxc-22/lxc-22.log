@@ -1,0 +1,43 @@
+SIOCSARP: Invalid argument
+arp: cannot set entry on line 22 of etherfile /tmp/arp.txt !
+Logging all child pids ... 
+Waiting for all child processes to finish ... 
+Waiting for trigger file ... 
+Starting Process: /home/kronos/Downloads/grpc/examples/cpp/helloworld/greeter_client 10.1.1.100 50051 100 100
+Waiting for 1 sec for server to start ...
+14: Connect Failed
+Time elapsed for request completion: 0.139362 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.22958 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 1.69844 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.611339 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.597653 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.135138 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.133862 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.409652 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.237316 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.195798 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.018212 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.035686 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.023819 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.429294 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.432818 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.114161 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.103085 Server = 10.1.1.100, Port = 50051
+14: Connect Failed
+Time elapsed for request completion: 0.056145 Server = 10.1.1.100, Port = 50051

@@ -1,0 +1,10 @@
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50051
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50052
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50053
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50054
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50055
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50056
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50057
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50058
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50059
+/home/moses/grpc/examples/cpp/helloworld/greeter_server 50060

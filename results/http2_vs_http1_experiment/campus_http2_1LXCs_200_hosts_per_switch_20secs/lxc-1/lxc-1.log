@@ -1,0 +1,4 @@
+sudo: unable to resolve host lxc-1: Connection refused
+sudo: unable to resolve host lxc-1: Connection refused
+[INFO] raised RLIMIT_NOFILE to 1048576
+TracerID: 0, STOP Command received. Stopping tracer ...

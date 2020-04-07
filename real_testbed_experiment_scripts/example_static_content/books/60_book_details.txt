@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/6334.Never_Let_Me_Go', u'vote_count': u'316', u'score': u'28,952', u'author': u'Kazuo Ishiguro', u'title': u'Never Let Me Go'}

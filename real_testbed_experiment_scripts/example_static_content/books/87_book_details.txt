@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/18630.The_Player_of_Games', u'vote_count': u'216', u'score': u'19,175', u'author': u'Iain M. Banks', u'title': u'The Player of Games (Culture, #2)'}

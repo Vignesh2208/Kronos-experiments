@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/830.Snow_Crash', u'vote_count': u'041', u'score': u'99,816', u'author': u'Neal Stephenson', u'title': u'Snow Crash'}

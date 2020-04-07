@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/46654.The_Foundation_Trilogy', u'vote_count': u'952', u'score': u'89,711', u'author': u'Isaac Asimov', u'title': u'The Foundation Trilogy (Foundation, #1-3)'}

@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/18423.The_Left_Hand_of_Darkness', u'vote_count': u'724', u'score': u'67,429', u'author': u'Ursula K. Le Guin', u'title': u'The Left Hand of Darkness'}

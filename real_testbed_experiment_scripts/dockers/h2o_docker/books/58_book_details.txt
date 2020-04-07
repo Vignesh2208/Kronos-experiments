@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/333867.The_Stars_My_Destination', u'vote_count': u'342', u'score': u'31,050', u'author': u'Alfred Bester', u'title': u'The Stars My Destination'}

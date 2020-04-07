@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/234225.Dune', u'vote_count': u'164', u'score': u'410,305', u'author': u'Frank Herbert', u'title': u'Dune (Dune Chronicles, #1)'}

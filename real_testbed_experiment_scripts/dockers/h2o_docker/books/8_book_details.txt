@@ -1,0 +1,1 @@
+{u'url': u'https://www.goodreads.com/book/show/2767052-the-hunger-games', u'vote_count': u'455', u'score': u'140,417', u'author': u'Suzanne Collins', u'title': u'The Hunger Games (The Hunger Games, #1)'}

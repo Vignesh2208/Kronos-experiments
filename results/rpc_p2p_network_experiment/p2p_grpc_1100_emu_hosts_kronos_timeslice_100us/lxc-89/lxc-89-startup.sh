@@ -1,0 +1,11 @@
+arp -f /tmp/arp.txt
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50051"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50052"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50053"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50054"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50055"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50056"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50057"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50058"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50059"
+sudo tracer -r 1.000000 -n 100000 -c "/home/moses/grpc/examples/cpp/helloworld/greeter_server 50060"
